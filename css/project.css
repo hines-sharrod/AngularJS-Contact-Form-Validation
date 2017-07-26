@@ -34,7 +34,7 @@ body {
 
 /*Flexbox Container*/
 .main-content {
-    padding: 40px 15px 0px;
+    padding: 20px 15px 0px;
     background-color: #2F5174;
     background-image: url(../img/SideGridHeaderBGTile.gif);
     background-repeat: repeat-x;
@@ -57,21 +57,21 @@ form {
 .form-group {
     flex: 1 1 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
-/*Flexbox item*/
-.form-group label {
+/*Flexbox items*/
+.form-group > * {
     flex: 1;
 }
 
 /*Flexbox item*/
-.form-group input, .form-group textarea, .form-group select {
-    flex: 9;
-}
 
 
-.form-group btn {
-    text-align: right;
+.form-group .button-success {
+    display: inline-block;
+    justify-content: center;
+
 }
 
 .button-success {
@@ -114,4 +114,9 @@ form {
 textarea.form-control {
     height: auto;
     max-width: 100%;
+}
+
+.border-bottom {
+    padding-bottom: 15px;
+    border-bottom:  2px solid #d3d3d3;
 }

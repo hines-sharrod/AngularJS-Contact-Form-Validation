@@ -1,17 +1,19 @@
 <!DOCTYPE html >
 <html lang="en" ng-app="addBulletin">
-<head >
-	<title >Add or Edit a Bulletin</title >
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
-	<link href="css/custom.css" rel="stylesheet" type="text/css" >
-	<link href="css/project.css" rel="stylesheet" type="text/css" >
-</head >
 
-<body >
-<nav class="navbar navbar-inverse navbar-fixed-top" >
-	<div class="container" >
-		<div class="navbar-header" >
-			<a class="navbar-brand" href="/"><span>Bulletin Home</span></a >
+<head>
+    <title>Add or Edit a Bulletin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/project.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><span>Bulletin Home</span></a >
 			<a class="navbar-brand" href="/"><span>Add or Edit a Bulletin</span></a >
 			<a class="navbar-brand" href="/"><span>Bulletin Sample</span></a >
 			<a class="navbar-brand" href="/"><span>Preview Active Bulletins</span></a >
@@ -21,9 +23,11 @@
 
 <div class="container main-content" ng-controller="FormCtrl">
 
-	<form ng-submit="onSubmit(theForm.$valid)" name="theForm" novalidate="novalidate">
+	<form ng-submit="onSubmit(theForm.$valid)" name="theForm">
+        <h4>Enter a Title and Message</h4>
         
 		<div class="form-group" >
+           
 			<label for="title" >Title</label >
 			<input type="text"
 			       class="form-control"
@@ -31,37 +35,51 @@
 			       id="title" >
 		</div >
 
-		<div class="form-group" ng-class="{'has-error':!theForm.email.$vaild && !theForm.$pristine, 'has-success':theForm.email.$vaild && !theForm.$pristine }">
-			<label for="message" >Message</label >
-            <textarea type="text" class="form-control" rows="6" ng-model="formModel.message" id="message" required="required" name=email></textarea>
-            
-            <pre>Field Valid? {{ theForm.email.$valid }}</pre>
-            <pre>Field Pristine? {{ theForm.$pristine }}</pre>
+		<div class="form-group border-bottom" ng-class="{'has-error':!theForm.message.$vaild && !theForm.$pristine, 'has-success':theForm.message.$vaild && !theForm.$pristine }">
+			<label for="message">Message</label >
+            <textarea type="text" class="form-control" rows="6" ng-model="formModel.message" id="message" required="required" name="message"></textarea>
 		</div >
     
-        
-        <hr />
-
+        <h4>Enter a UTC date range for when the bulletin is active:</h4>
 		<div class="form-group" >
-			<label for="username" >Username</label >
+			<label for="username" >Starts on</label >
+            <input id='datetimepicker1' type='text' class="form-control input-group date" />
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 			<input type="text"
 			       class="form-control"
                    ng-model="formModel.username"
-			       id="username" >
+			       id="username" 
+                   name="username">
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            :
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
 		</div >
 
-		<div class="form-group" >
-			<label for="age" >Age</label >
+		<div class="form-group border-bottom" >
+			<label for="age" >Ends On</label >
 			<input type="number"
 			       class="form-control"
                    ng-model="formModel.age"
-			       id="age" >
+			       id="age" 
+                   name="age">
 		</div >
         
-        <hr />
+        <h4>Enter Approval Information</h4>
 
 		<div class="form-group" >
-			<label for="sex" >Sex</label >
+			<label for="sex" >Approved</label >
 			<select name="sex"
 			        id="sex"
 				    class="form-control"
@@ -73,7 +91,36 @@
 		</div >
 
 		<div class="form-group" >
-			<label for="password" >Password</label >
+			<label for="password" >Approved On</label >
+			<input type="password"
+			       class="form-control"
+                   ng-model="formModel.password"
+			       id="password" >
+        </div>
+        <div class="form-group border-bottom" >
+			<label for="password" >Approver Name</label >
+			<input type="password"
+			       class="form-control"
+                   ng-model="formModel.password"
+			       id="password" >
+		</div >
+        
+        <h4>Enter Other Settings</h4>
+
+		<div class="form-group" >
+			<label for="sex" >Enabled</label >
+			<select name="sex"
+			        id="sex"
+				    class="form-control"
+                    ng-model="formModel.sex">
+				<option value="" >Please Choose</option >
+				<option value="male" >Male</option >
+				<option value="female" >Female</option >
+			</select >
+		</div >
+
+		<div class="form-group" >
+			<label for="password" >Occurs On <br>(Optional)</label >
 			<input type="password"
 			       class="form-control"
                    ng-model="formModel.password"
@@ -83,10 +130,11 @@
 		<div class="form-group">
 			<button class="btn button-success" type="submit">Save</button>
 		</div>
-
+        
 	</form >
-    
+        
 </div >
+
 
 
 <script src="js/angular.min.js" ></script>
