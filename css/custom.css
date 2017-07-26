@@ -1,0 +1,1734 @@
+/*
+	*THESE IS THE CUSTOM CSS FRAMEWORK
+	*DO NOT MODIFY THIS FILE
+*/ 
+
+/*BASIC*/
+html{height: 100%;}
+body{margin:0;padding:0;height:100%;overflow-y:auto;position: relative;}
+a,.link{color:#019AD5;cursor: pointer;}
+a:hover,.link:hover{text-decoration: none;}
+a,button{transition: all .2s ease-in-out;cursor: pointer;}
+h1,h2,h3,h4{font-weight: 300;}
+
+/*BUTTONS*/
+.btn{box-shadow: 0 1px 2px rgba(0,0,0,0.2);cursor: pointer;}
+.btn:hover,.btn:focus{box-shadow: 0 1px 3px rgba(0,0,0,0.4);outline: none !important;}
+.btn:active{box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);}
+.btn.disabled, .btn[disabled]{cursor: not-allowed !important; opacity: 0.5 !important;box-shadow: none !important;}
+
+.btn.btn-default,
+.btn.btn-default.disabled:hover,
+.btn.btn-default.disabled:focus,
+.btn.btn-default[disabled]:hover,
+.btn.btn-default[disabled]:focus{
+	background-color: #efefef;
+	border: 1px solid #ccc;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:focus{
+	background-color: #019AD5;
+	border: 1px solid #0189bd;
+	color: #fff;
+}
+
+.btn.btn-primary,
+.btn.btn-primary.disabled:hover,
+.btn.btn-primary.disabled:focus,
+.btn.btn-primary[disabled]:hover,
+.btn.btn-primary[disabled]:focus{
+	background-color: transparent;
+	border: 1px solid #019AD5;
+	color: #019AD5;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus{
+	background-color: #019AD5;
+	border: 1px solid #019AD5;
+	color: #fff;
+}
+
+.btn.btn-success,
+.btn.btn-success.disabled:hover,
+.btn.btn-success.disabled:focus,
+.btn.btn-success[disabled]:hover,
+.btn.btn-success[disabled]:focus{
+	background-color: transparent;
+    border-color: #5cb85c;
+	color: #5cb85c;
+}
+
+.btn.btn-success:hover,
+.btn.btn-success:focus{
+	background-color: #5cb85c;
+    border-color: #4cae4c;
+	color: #fff;
+}
+
+.btn.btn-info,
+.btn.btn-info.disabled:hover,
+.btn.btn-info.disabled:focus,
+.btn.btn-info[disabled]:hover,
+.btn.btn-info[disabled]:focus{
+	background-color: #fff;
+    border: 1px solid #ddd;
+	color: #444;
+}
+
+.btn.btn-info:hover,
+.btn.btn-info:focus{
+    border: 1px solid #ccc;
+	color: #222;
+	background-color: #fff;
+}
+
+.btn.btn-warning,
+.btn.btn-warning.disabled:hover,
+.btn.btn-warning.disabled:focus,
+.btn.btn-warning[disabled]:hover,
+.btn.btn-warning[disabled]:focus{
+	background-color: transparent;
+	border-color: 1px solid #f0ad4e;
+    color: #f0ad4e;
+}
+
+.btn.btn-warning:hover,
+.btn.btn-warning:focus{
+	background-color: #f0ad4e;
+    border-color: 1px solid #eea236;
+	color: #fff;
+}
+
+.btn.btn-danger,
+.btn.btn-danger.disabled:hover,
+.btn.btn-danger.disabled:focus,
+.btn.btn-danger[disabled]:hover,
+.btn.btn-danger[disabled]:focus{
+	background-color: transparent;
+	border: 1px solid #d9534f;
+    color: #d9534f;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus{
+	background-color: #d9534f;
+    border-color: #d43f3a;
+	color: #fff;
+}
+
+.btn.btn-link,
+.btn.btn-link.disabled:hover,
+.btn.btn-link.disabled:focus,
+.btn.btn-link[disabled]:hover,
+.btn.btn-link[disabled]:focus{
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: #019AD5;
+	border-radius: 3px;
+	box-shadow: none !important;
+}
+
+.btn.btn-link:hover,
+.btn.btn-link:focus{
+	background-color: #019AD5;
+	border: 1px solid #019AD5;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn.btn-default:active,
+.btn.btn-primary:active,
+.btn.btn-success:active,
+.btn.btn-danger:active,
+.btn.btn-warning:active{
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.btn-group>.btn+.dropdown-toggle,
+.input-group-btn>.btn+.dropdown-toggle{
+	padding: 14px 8px;
+}
+
+/*DROPDOWN*/
+.dropdown-header {
+    color: #ccc;
+    padding: 3px 10px 1px 10px;
+}
+
+
+/*NAVBAR*/
+.navbar{
+	background-color: #333;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	border-radius: 0;
+}
+
+.navbar.navbar-invert{
+	background: rgba(0,0,0,0.1);
+	border-bottom: 1px solid #ddd;
+	box-shadow: none;
+	border-radius: none;
+}
+
+.navbar-brand{padding: 7px 0 0 0; line-height: 2em;}
+.navbar-brand img{height: 35px;}
+
+@media screen and (max-width:767px){
+	.navbar-brand{
+		margin-left: 15px;
+	}
+}
+
+.navbar-nav li.active{background: rgba(0,0,0,0.2);}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus{background-color:#111;color:#fff;}
+
+.site-nav .navbar-header .navbar-toggle{
+	border: none;
+	background-color: transparent;
+}
+.site-nav .navbar-header .navbar-toggle:hover,
+.site-nav .navbar-header .navbar-toggle:focus{
+	background: rgba(0,0,0,0.5);
+}
+
+.site-nav .navbar-header .navbar-toggle .icon-bar{background-color: #fff;}
+
+
+/*TABLE*/
+.table.table-bordered thead tr th{
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #111;
+	padding: 3px 8px;
+	font-size: 75%;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th{
+	padding: 5px;
+	font-size: 95%;
+	line-height: 1.2;
+}
+
+.table.table-bordered{border-top: 1px solid #233B4E;;}
+.table.table-condensed{font-size: 85%;}
+
+/*ICONS*/
+.fa{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.fa.fa-lg{
+	width: 20px;
+	height: 20px;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.fa.fa-2x{width: 24px;height: 24px;}
+.fa.fa-3x{width: 36px;height: 36px;}
+.fa.fa-4x{width: 48px;height: 48px;}
+.fa.fa-5x{width: 60px;height: 60px;}
+
+.btn.btn-xs .fa{width:13px;height: 13px;}
+
+/*BLACK ICONS*/
+.fa.fa-adjust{background: url(../icons/black/adjust.svg);}
+.fa.fa-align-center{background: url(../icons/black/align-center.svg);}
+.fa.fa-align-justify{background: url(../icons/black/align-justify.svg);}
+.fa.fa-align-left{background: url(../icons/black/align-left.svg);}
+.fa.fa-align-right{background: url(../icons/black/align-right.svg);}
+.fa.fa-ambulance{background: url(../icons/black/ambulance.svg);}
+.fa.fa-anchor{background: url(../icons/black/anchor.svg);}
+.fa.fa-angle-double-down{background: url(../icons/black/angle-double-down.svg);}
+.fa.fa-angle-double-left{background: url(../icons/black/angle-double-left.svg);}
+.fa.fa-angle-double-right{background: url(../icons/black/angle-double-right.svg);}
+.fa.fa-angle-double-up{background: url(../icons/black/angle-double-up.svg);}
+.fa.fa-angle-down{background: url(../icons/black/angle-down.svg);}
+.fa.fa-angle-left{background: url(../icons/black/angle-left.svg);}
+.fa.fa-angle-right{background: url(../icons/black/angle-right.svg);}
+.fa.fa-angle-up{background: url(../icons/black/angle-up.svg);}
+.fa.fa-archive{background: url(../icons/black/archive.svg);}
+.fa.fa-area-chart{background: url(../icons/black/area-chart.svg);}
+.fa.fa-arrow-circle-down{background: url(../icons/black/arrow-circle-down.svg);}
+.fa.fa-arrow-circle-left{background: url(../icons/black/arrow-circle-left.svg);}
+.fa.fa-arrow-circle-right{background: url(../icons/black/arrow-circle-right.svg);}
+.fa.fa-arrow-circle-up{background: url(../icons/black/arrow-circle-up.svg);}
+.fa.fa-arrow-circle-o-down{background: url(../icons/black/arrow-circle-o-down.svg);}
+.fa.fa-arrow-circle-o-left{background: url(../icons/black/arrow-circle-o-left.svg);}
+.fa.fa-arrow-circle-o-right{background: url(../icons/black/arrow-circle-o-right.svg);}
+.fa.fa-arrow-circle-o-up{background: url(../icons/black/arrow-circle-o-up.svg);}
+.fa.fa-arrow-down{background: url(../icons/black/arrow-down.svg);}
+.fa.fa-arrow-left{background: url(../icons/black/arrow-left.svg);}
+.fa.fa-arrow-right{background: url(../icons/black/arrow-right.svg);}
+.fa.fa-arrow-up{background: url(../icons/black/arrow-up.svg);}
+.fa.fa-arrows-alt{background: url(../icons/black/arrows-alt.svg);}
+.fa.fa-arrows-h{background: url(../icons/black/arrows-h.svg);}
+.fa.fa-arrows-v{background: url(../icons/black/arrows-v.svg);}
+.fa.fa-arrows{background: url(../icons/black/arrows.svg);}
+.fa.fa-asterisk{background: url(../icons/black/asterisk.svg);}
+.fa.fa-at{background: url(../icons/black/at.svg);}
+.fa.fa-automobile{background: url(../icons/black/automobile.svg);}
+.fa.fa-backward{background: url(../icons/black/backward.svg);}
+.fa.fa-balance-scale{background: url(../icons/black/balance-scale.svg);}
+.fa.fa-ban{background: url(../icons/black/ban.svg);}
+.fa.fa-bank{background: url(../icons/black/bank.svg);}
+.fa.fa-bar-chart-o{background: url(../icons/black/bar-chart-o.svg);}
+.fa.fa-bar-chart{background: url(../icons/black/bar-chart.svg);}
+.fa.fa-barcode{background: url(../icons/black/barcode.svg);}
+.fa.fa-bars{background: url(../icons/black/bars.svg);}
+.fa.fa-battery-0{background: url(../icons/black/battery-0.svg);}
+.fa.fa-battery-1{background: url(../icons/black/battery-1.svg);}
+.fa.fa-battery-2{background: url(../icons/black/battery-2.svg);}
+.fa.fa-battery-3{background: url(../icons/black/battery-3.svg);}
+.fa.fa-battery-4{background: url(../icons/black/battery-4.svg);}
+.fa.fa-battery-empty{background: url(../icons/black/battery-empty.svg);}
+.fa.fa-battery-full{background: url(../icons/black/battery-full.svg);}
+.fa.fa-battery-half{background: url(../icons/black/battery-half.svg);}
+.fa.fa-battery-quarter{background: url(../icons/black/battery-quarter.svg);}
+.fa.fa-battery-three-quarters{background: url(../icons/black/battery-three-quarters.svg);}
+.fa.fa-bed{background: url(../icons/black/bed.svg);}
+.fa.fa-beer{background: url(../icons/black/beer.svg);}
+.fa.fa-bell-o{background: url(../icons/black/bell-o.svg);}
+.fa.fa-bell-slash-o{background: url(../icons/black/bell-slash-o.svg);}
+.fa.fa-bell-slash{background: url(../icons/black/bell-slash.svg);}
+.fa.fa-bell{background: url(../icons/black/bell.svg);}
+.fa.fa-bicycle{background: url(../icons/black/bicycle.svg);}
+.fa.fa-binoculars{background: url(../icons/black/binoculars.svg);}
+.fa.fa-birthday-cake{background: url(../icons/black/birthday-cake.svg);}
+.fa.fa-black-tie{background: url(../icons/black/black-tie.svg);}
+.fa.fa-bluetooth-b{background: url(../icons/black/bluetooth-b.svg);}
+.fa.fa-bluetooth{background: url(../icons/black/bluetooth.svg);}
+.fa.fa-bold{background: url(../icons/black/bold.svg);}
+.fa.fa-bolt{background: url(../icons/black/bolt.svg);}
+.fa.fa-bomb{background: url(../icons/black/bomb.svg);}
+.fa.fa-book{background: url(../icons/black/book.svg);}
+.fa.fa-bookmark{background: url(../icons/black/bookmark.svg);}
+.fa.fa-bookmark-o{background: url(../icons/black/bookmark-o.svg);}
+.fa.fa-briefcase{background: url(../icons/black/briefcase.svg);}
+.fa.fa-btc{background: url(../icons/black/btc.svg);}
+.fa.fa-bug{background: url(../icons/black/bug.svg);}
+.fa.fa-building-o{background: url(../icons/black/building-o.svg);}
+.fa.fa-building{background: url(../icons/black/building.svg);}
+.fa.fa-bullhorn{background: url(../icons/black/bullhorn.svg);}
+.fa.fa-bullseye{background: url(../icons/black/bullseye.svg);}
+.fa.fa-bus{background: url(../icons/black/bus.svg);}
+.fa.fa-cab{background: url(../icons/black/cab.svg);}
+.fa.fa-calculator{background: url(../icons/black/calculator.svg);}
+.fa.fa-calendar-check-o{background: url(../icons/black/calendar-check-o.svg);}
+.fa.fa-calendar-minus-o{background: url(../icons/black/calendar-minus-o.svg);}
+.fa.fa-calendar-o{background: url(../icons/black/calendar-o.svg);}
+.fa.fa-calendar-plus-o{background: url(../icons/black/calendar-plus-o.svg);}
+.fa.fa-calendar-times-o{background: url(../icons/black/calendar-times-o.svg);}
+.fa.fa-calendar{background: url(../icons/black/calendar.svg);}
+.fa.fa-camera-retro{background: url(../icons/black/camera-retro.svg);}
+.fa.fa-camera{background: url(../icons/black/camera.svg);}
+.fa.fa-car{background: url(../icons/black/car.svg);}
+.fa.fa-caret-down{background: url(../icons/black/caret-down.svg);}
+.fa.fa-caret-left{background: url(../icons/black/caret-left.svg);}
+.fa.fa-caret-right{background: url(../icons/black/caret-right.svg);}
+.fa.fa-caret-square-o-down{background: url(../icons/black/caret-square-o-down.svg);}
+.fa.fa-caret-square-o-left{background: url(../icons/black/caret-square-o-left.svg);}
+.fa.fa-caret-square-o-right{background: url(../icons/black/caret-square-o-right.svg);}
+.fa.fa-caret-square-o-up{background: url(../icons/black/caret-square-o-up.svg);}
+.fa.fa-caret-up{background: url(../icons/black/caret-up.svg);}
+.fa.fa-cart-arrow-down{background: url(../icons/black/cart-arrow-down.svg);}
+.fa.fa-cart-plus{background: url(../icons/black/cart-plus.svg);}
+.fa.fa-cc-amex{background: url(../icons/black/cc-amex.svg);}
+.fa.fa-cc-diners-club{background: url(../icons/black/cc-diners-club.svg);}
+.fa.fa-cc-discover{background: url(../icons/black/cc-discover.svg);}
+.fa.fa-cc-jcb{background: url(../icons/black/cc-jcb.svg);}
+.fa.fa-cc-mastercard{background: url(../icons/black/cc-mastercard.svg);}
+.fa.fa-cc-paypal{background: url(../icons/black/cc-paypal.svg);}
+.fa.fa-cc-stripe{background: url(../icons/black/cc-stripe.svg);}
+.fa.fa-cc-visa{background: url(../icons/black/cc-visa.svg);}
+.fa.fa-cc{background: url(../icons/black/cc.svg);}
+.fa.fa-certificate{background: url(../icons/black/certificate.svg);}
+.fa.fa-chain-broken{background: url(../icons/black/chain-broken.svg);}
+.fa.fa-chain{background: url(../icons/black/chain.svg);}
+.fa.fa-check-circle-o{background: url(../icons/black/check-circle-o.svg);}
+.fa.fa-check-circle{background: url(../icons/black/check-circle.svg);}
+.fa.fa-check-square-o{background: url(../icons/black/check-square-o.svg);}
+.fa.fa-check-square{background: url(../icons/black/check-square.svg);}
+.fa.fa-check{background: url(../icons/black/check.svg);}
+.fa.fa-chevron-circle-down{background: url(../icons/black/chevron-circle-down.svg);}
+.fa.fa-chevron-circle-left{background: url(../icons/black/chevron-circle-left.svg);}
+.fa.fa-chevron-circle-right{background: url(../icons/black/chevron-circle-right.svg);}
+.fa.fa-chevron-circle-up{background: url(../icons/black/chevron-circle-up.svg);}
+.fa.fa-chevron-down{background: url(../icons/black/chevron-down.svg);}
+.fa.fa-chevron-left{background: url(../icons/black/chevron-left.svg);}
+.fa.fa-chevron-right{background: url(../icons/black/chevron-right.svg);}
+.fa.fa-chevron-up{background: url(../icons/black/chevron-up.svg);}
+.fa.fa-child{background: url(../icons/black/child.svg);}
+.fa.fa-chrome{background: url(../icons/black/chrome.svg);}
+.fa.fa-circle-o-notch{background: url(../icons/black/circle-o-notch.svg);}
+.fa.fa-circle-o{background: url(../icons/black/circle-o.svg);}
+.fa.fa-circle-thin{background: url(../icons/black/circle-thin.svg);}
+.fa.fa-circle{background: url(../icons/black/circle.svg);}
+.fa.fa-clipboard{background: url(../icons/black/clipboard.svg);}
+.fa.fa-clock-o{background: url(../icons/black/clock-o.svg);}
+.fa.fa-clone{background: url(../icons/black/clone.svg);}
+.fa.fa-close{background: url(../icons/black/close.svg);}
+.fa.fa-cloud-download{background: url(../icons/black/cloud-download.svg);}
+.fa.fa-cloud-upload{background: url(../icons/black/cloud-upload.svg);}
+.fa.fa-cloud{background: url(../icons/black/cloud.svg);}
+.fa.fa-cny{background: url(../icons/black/cny.svg);}
+.fa.fa-code-fork{background: url(../icons/black/code-fork.svg);}
+.fa.fa-code{background: url(../icons/black/code.svg);}
+.fa.fa-codepen{background: url(../icons/black/codepen.svg);}
+.fa.fa-codiepie{background: url(../icons/black/codiepie.svg);}
+.fa.fa-coffee{background: url(../icons/black/coffee.svg);}
+.fa.fa-cog{background: url(../icons/black/cog.svg);}
+.fa.fa-cogs{background: url(../icons/black/cogs.svg);}
+.fa.fa-columns{background: url(../icons/black/columns.svg);}
+.fa.fa-comment-o{background: url(../icons/black/comment-o.svg);}
+.fa.fa-comment{background: url(../icons/black/comment.svg);}
+.fa.fa-commenting-o{background: url(../icons/black/commenting-o.svg);}
+.fa.fa-commenting{background: url(../icons/black/commenting.svg);}
+.fa.fa-comments{background: url(../icons/black/comments.svg);}
+.fa.fa-comments-o{background: url(../icons/black/comments-o.svg);}
+.fa.fa-compass{background: url(../icons/black/compass.svg);}
+.fa.fa-compress{background: url(../icons/black/compress.svg);}
+.fa.fa-connectdevelop{background: url(../icons/black/connectdevelop.svg);}
+.fa.fa-contao{background: url(../icons/black/contao.svg);}
+.fa.fa-copy{background: url(../icons/black/copy.svg);}
+.fa.fa-copyright{background: url(../icons/black/copyright.svg);}
+.fa.fa-creative-commons{background: url(../icons/black/creative-commons.svg);}
+.fa.fa-credit-card-alt{background: url(../icons/black/credit-card-alt.svg);}
+.fa.fa-credit-card{background: url(../icons/black/credit-card.svg);}
+.fa.fa-crop{background: url(../icons/black/crop.svg);}
+.fa.fa-crosshairs{background: url(../icons/black/crosshairs.svg);}
+.fa.fa-css3{background: url(../icons/black/css3.svg);}
+.fa.fa-cube{background: url(../icons/black/cube.svg);}
+.fa.fa-cubes{background: url(../icons/black/cubes.svg);}
+.fa.fa-cut{background: url(../icons/black/cut.svg);}
+.fa.fa-cutlery{background: url(../icons/black/cutlery.svg);}
+.fa.fa-dashboard{background: url(../icons/black/dashboard.svg);}
+.fa.fa-dashcube{background: url(../icons/black/dashcube.svg);}
+.fa.fa-database{background: url(../icons/black/database.svg);}
+.fa.fa-dedent{background: url(../icons/black/dedent.svg);}
+.fa.fa-delicious{background: url(../icons/black/delicious.svg);}
+.fa.fa-desktop{background: url(../icons/black/desktop.svg);}
+.fa.fa-diamond{background: url(../icons/black/diamond.svg);}
+.fa.fa-dollar{background: url(../icons/black/dollar.svg);}
+.fa.fa-dot-circle-o{background: url(../icons/black/dot-circle-o.svg);}
+.fa.fa-download{background: url(../icons/black/download.svg);}
+.fa.fa-edit{background: url(../icons/black/edit.svg);}
+.fa.fa-edge{background: url(../icons/black/edge.svg);}
+.fa.fa-eject{background: url(../icons/black/eject.svg);}
+.fa.fa-ellipsis-h{background: url(../icons/black/ellipsis-h.svg);}
+.fa.fa-ellipsis-v{background: url(../icons/black/ellipsis-v.svg);}
+.fa.fa-empire{background: url(../icons/black/empire.svg);}
+.fa.fa-envelope-o{background: url(../icons/black/envelope-o.svg);}
+.fa.fa-envelope-square{background: url(../icons/black/envelope-square.svg);}
+.fa.fa-envelope{background: url(../icons/black/envelope.svg);}
+.fa.fa-eraser{background: url(../icons/black/eraser.svg);}
+.fa.fa-eur{background: url(../icons/black/eur.svg);}
+.fa.fa-euro{background: url(../icons/black/euro.svg);}
+.fa.fa-exchange{background: url(../icons/black/exchange.svg);}
+.fa.fa-exchange-circle{background: url(../icons/black/exchange-circle.svg);}
+.fa.fa-exchange-triangle{background: url(../icons/black/exchange-triangle.svg);}
+.fa.fa-exclamation-circle{background: url(../icons/black/exclamation-circle.svg);}
+.fa.fa-exclamation-triangle{background: url(../icons/black/exclamation-triangle.svg);}
+.fa.fa-exclamation{background: url(../icons/black/exclamation.svg);}
+.fa.fa-expand{background: url(../icons/black/expand.svg);}
+.fa.fa-exclamation-circle{background: url(../icons/black/exclamation-circle.svg);}
+.fa.fa-expeditedssl{background: url(../icons/black/expeditedssl.svg);}
+.fa.fa-external-link-square{background: url(../icons/black/external-link-square.svg);}
+.fa.fa-external-link{background: url(../icons/black/external-link.svg);}
+.fa.fa-eye-slash{background: url(../icons/black/eye-slash.svg);}
+.fa.fa-eye{background: url(../icons/black/eye.svg);}
+.fa.fa-eyedropper{background: url(../icons/black/eyedropper.svg);}
+.fa.fa-fast-backward{background: url(../icons/black/fast-backward.svg);}
+.fa.fa-fast-forward{background: url(../icons/black/fast-forward.svg);}
+.fa.fa-fax{background: url(../icons/black/fax.svg);}
+.fa.fa-feed{background: url(../icons/black/feed.svg);}
+.fa.fa-female{background: url(../icons/black/female.svg);}
+.fa.fa-fighter-jet{background: url(../icons/black/fighter-jet.svg);}
+.fa.fa-file-archive-o{background: url(../icons/black/file-archive-o.svg);}
+.fa.fa-file-audio-o{background: url(../icons/black/file-audio-o.svg);}
+.fa.fa-file-code-o{background: url(../icons/black/file-code-o.svg);}
+.fa.fa-file-excel-o{background: url(../icons/black/file-excel-o.svg);}
+.fa.fa-file-image-o{background: url(../icons/black/file-image-o.svg);}
+.fa.fa-file-movie-o{background: url(../icons/black/file-movie-o.svg);}
+.fa.fa-file-o{background: url(../icons/black/file-o.svg);}
+.fa.fa-file-pdf-o{background: url(../icons/black/file-pdf-o.svg);}
+.fa.fa-file-photo-o{background: url(../icons/black/file-photo-o.svg);}
+.fa.fa-file-picture-o{background: url(../icons/black/file-picture-o.svg);}
+.fa.fa-file-powerpoint-o{background: url(../icons/black/file-powerpoint-o.svg);}
+.fa.fa-file-sound-o{background: url(../icons/black/file-sound-o.svg);}
+.fa.fa-file-text-o{background: url(../icons/black/file-text-o.svg);}
+.fa.fa-file-text{background: url(../icons/black/file-text.svg);}
+.fa.fa-file-video-o{background: url(../icons/black/file-video-o.svg);}
+.fa.fa-file-word-o{background: url(../icons/black/file-word-o.svg);}
+.fa.fa-file-zip-o{background: url(../icons/black/file-zip-o.svg);}
+.fa.fa-file{background: url(../icons/black/file.svg);}
+.fa.fa-files-o{background: url(../icons/black/files-o.svg);}
+.fa.fa-film{background: url(../icons/black/film.svg);}
+.fa.fa-filter{background: url(../icons/black/filter.svg);}
+.fa.fa-fire-extinguisher{background: url(../icons/black/fire-extinguisher.svg);}
+.fa.fa-fire{background: url(../icons/black/fire.svg);}
+.fa.fa-firefox{background: url(../icons/black/firefox.svg);}
+.fa.fa-flag-checkered{background: url(../icons/black/flag-checkered.svg);}
+.fa.fa-flag-o{background: url(../icons/black/flag-o.svg);}
+.fa.fa-flag{background: url(../icons/black/flag.svg);}
+.fa.fa-flash{background: url(../icons/black/flash.svg);}
+.fa.fa-flask{background: url(../icons/black/flask.svg);}
+.fa.fa-flickr{background: url(../icons/black/flickr.svg);}
+.fa.fa-floppy-o{background: url(../icons/black/floppy-o.svg);}
+.fa.fa-folder-o{background: url(../icons/black/folder-o.svg);}
+.fa.fa-folder-open-o{background: url(../icons/black/folder-open-o.svg);}
+.fa.fa-folder-open{background: url(../icons/black/folder-open.svg);}
+.fa.fa-folder{background: url(../icons/black/folder.svg);}
+.fa.fa-font{background: url(../icons/black/font.svg);}
+.fa.fa-fonticons{background: url(../icons/black/fonticons.svg);}
+.fa.fa-fort-awesome{background: url(../icons/black/fort-awesome.svg);}
+.fa.fa-forward{background: url(../icons/black/forward.svg);}
+.fa.fa-frown-o{background: url(../icons/black/frown-o.svg);}
+.fa.fa-futbol-o{background: url(../icons/black/futbol-o.svg);}
+.fa.fa-gamepad{background: url(../icons/black/gamepad.svg);}
+.fa.fa-gavel{background: url(../icons/black/gavel.svg);}
+.fa.fa-gear{background: url(../icons/black/gear.svg);}
+.fa.fa-gears{background: url(../icons/black/gears.svg);}
+.fa.fa-genderless{background: url(../icons/black/genderless.svg);}
+.fa.fa-get-pocket{background: url(../icons/black/get-pocket.svg);}
+.fa.fa-gg-circle{background: url(../icons/black/gg-circle.svg);}
+.fa.fa-gift{background: url(../icons/black/gift.svg);}
+.fa.fa-git-square{background: url(../icons/black/git-square.svg);}
+.fa.fa-git{background: url(../icons/black/git.svg);}
+.fa.fa-github-alt{background: url(../icons/black/github-alt.svg);}
+.fa.fa-github-square{background: url(../icons/black/github-square.svg);}
+.fa.fa-github{background: url(../icons/black/github.svg);}
+.fa.fa-glass{background: url(../icons/black/glass.svg);}
+.fa.fa-globe{background: url(../icons/black/globe.svg);}
+.fa.fa-google-plus{background: url(../icons/black/google-plus.svg);}
+.fa.fa-google-plus-square{background: url(../icons/black/google-plus-square.svg);}
+.fa.fa-google-wallet{background: url(../icons/black/google-wallet.svg);}
+.fa.fa-google{background: url(../icons/black/google.svg);}
+.fa.fa-graduation-cap{background: url(../icons/black/graduation-cap.svg);}
+.fa.fa-group{background: url(../icons/black/group.svg);}
+.fa.fa-h-square{background: url(../icons/black/h-square.svg);}
+.fa.fa-hand-grab-o{background: url(../icons/black/hand-grab-o.svg);}
+.fa.fa-hand-lizard-o{background: url(../icons/black/hand-lizard-o.svg);}
+.fa.fa-hand-o-down{background: url(../icons/black/hand-o-down.svg);}
+.fa.fa-hand-o-left{background: url(../icons/black/hand-o-left.svg);}
+.fa.fa-hand-o-right{background: url(../icons/black/hand-o-right.svg);}
+.fa.fa-hand-o-up{background: url(../icons/black/hand-o-up.svg);}
+.fa.fa-hand-paper-o{background: url(../icons/black/hand-paper-o.svg);}
+.fa.fa-hand-peace-o{background: url(../icons/black/hand-peace-o.svg);}
+.fa.fa-hand-pointer-o{background: url(../icons/black/hand-pointer-o.svg);}
+.fa.fa-hand-rock-o{background: url(../icons/black/hand-rock-o.svg);}
+.fa.fa-hand-scissors-o{background: url(../icons/black/hand-scissors-o.svg);}
+.fa.fa-hand-spock-o{background: url(../icons/black/hand-spock-o.svg);}
+.fa.fa-hand-stop-o{background: url(../icons/black/hand-stop-o.svg);}
+.fa.fa-hashtag{background: url(../icons/black/hashtag.svg);}
+.fa.fa-hdd-o{background: url(../icons/black/hdd-o.svg);}
+.fa.fa-header{background: url(../icons/black/header.svg);}
+.fa.fa-headphones{background: url(../icons/black/headphones.svg);}
+.fa.fa-heart-o{background: url(../icons/black/heart-o.svg);}
+.fa.fa-heart{background: url(../icons/black/heart.svg);}
+.fa.fa-heartbeat{background: url(../icons/black/heartbeat.svg);}
+.fa.fa-history{background: url(../icons/black/history.svg);}
+.fa.fa-home{background: url(../icons/black/home.svg);}
+.fa.fa-hospital-o{background: url(../icons/black/hospital-o.svg);}
+.fa.fa-hotel{background: url(../icons/black/hotel.svg);}
+.fa.fa-hourglass-1{background: url(../icons/black/hourglass-1.svg);}
+.fa.fa-hourglass-2{background: url(../icons/black/hourglass-2.svg);}
+.fa.fa-hourglass-3{background: url(../icons/black/hourglass-3.svg);}
+.fa.fa-hourglass-end{background: url(../icons/black/hourglass-end.svg);}
+.fa.fa-hourglass-half{background: url(../icons/black/hourglass-half.svg);}
+.fa.fa-hourglass-o{background: url(../icons/black/hourglass-o.svg);}
+.fa.fa-hourglass-start{background: url(../icons/black/hourglass-start.svg);}
+.fa.fa-hourglass{background: url(../icons/black/hourglass.svg);}
+.fa.fa-html5{background: url(../icons/black/html5.svg);}
+.fa.fa-image{background: url(../icons/black/image.svg);}
+.fa.fa-inbox{background: url(../icons/black/inbox.svg);}
+.fa.fa-indent{background: url(../icons/black/indent.svg);}
+.fa.fa-industry{background: url(../icons/black/industry.svg);}
+.fa.fa-info-circle{background: url(../icons/black/info-circle.svg);}
+.fa.fa-info{background: url(../icons/black/info.svg);}
+.fa.fa-instagram{background: url(../icons/black/instagram.svg);}
+.fa.fa-institution{background: url(../icons/black/institution.svg);}
+.fa.fa-internet-explorer{background: url(../icons/black/internet-explorer.svg);}
+.fa.fa-italic{background: url(../icons/black/italic.svg);}
+.fa.fa-key{background: url(../icons/black/key.svg);}
+.fa.fa-keyboard-o{background: url(../icons/black/html5.svg);}
+.fa.fa-language{background: url(../icons/black/language.svg);}
+.fa.fa-laptop{background: url(../icons/black/laptop.svg);}
+.fa.fa-leaf{background: url(../icons/black/leaf.svg);}
+.fa.fa-legal{background: url(../icons/black/legal.svg);}
+.fa.fa-level-down{background: url(../icons/black/level-down.svg);}
+.fa.fa-level-up{background: url(../icons/black/level-up.svg);}
+.fa.fa-life-bouy{background: url(../icons/black/life-bouy.svg);}
+.fa.fa-life-ring{background: url(../icons/black/life-ring.svg);}
+.fa.fa-life-saver{background: url(../icons/black/life-saver.svg);}
+.fa.fa-lightbulb-o{background: url(../icons/black/lightbulb-o.svg);}
+.fa.fa-line-chart{background: url(../icons/black/line-chart.svg);}
+.fa.fa-link{background: url(../icons/black/link.svg);}
+.fa.fa-linkedin-square{background: url(../icons/black/linkedin-square.svg);}
+.fa.fa-linkedin{background: url(../icons/black/linkedin.svg);}
+.fa.fa-linux{background: url(../icons/black/linux.svg);}
+.fa.fa-list-alt{background: url(../icons/black/list-alt.svg);}
+.fa.fa-list-ol{background: url(../icons/black/list-ol.svg);}
+.fa.fa-list-ul{background: url(../icons/black/list-ul.svg);}
+.fa.fa-list{background: url(../icons/black/list.svg);}
+.fa.fa-location-arrow{background: url(../icons/black/location-arrow.svg);}
+.fa.fa-lock{background: url(../icons/black/lock.svg);}
+.fa.fa-long-arrow-down{background: url(../icons/black/long-arrow-down.svg);}
+.fa.fa-long-arrow-left{background: url(../icons/black/long-arrow-left.svg);}
+.fa.fa-long-arrow-right{background: url(../icons/black/long-arrow-right.svg);}
+.fa.fa-long-arrow-up{background: url(../icons/black/long-arrow-up.svg);}
+.fa.fa-magic{background: url(../icons/black/magic.svg);}
+.fa.fa-magnet{background: url(../icons/black/magnet.svg);}
+.fa.fa-mail-forward{background: url(../icons/black/mail-forward.svg);}
+.fa.fa-mail-reply-all{background: url(../icons/black/mail-reply-all.svg);}
+.fa.fa-mail-reply{background: url(../icons/black/mail-reply.svg);}
+.fa.fa-male{background: url(../icons/black/male.svg);}
+.fa.fa-map-marker{background: url(../icons/black/map-marker.svg);}
+.fa.fa-map-o{background: url(../icons/black/map-o.svg);}
+.fa.fa-map-pin{background: url(../icons/black/map-pin.svg);}
+.fa.fa-map-signs{background: url(../icons/black/map-signs.svg);}
+.fa.fa-map{background: url(../icons/black/map.svg);}
+.fa.fa-mars-double{background: url(../icons/black/mars-double.svg);}
+.fa.fa-mars-stroke-h{background: url(../icons/black/mars-stroke-h.svg);}
+.fa.fa-mars-stroke-v{background: url(../icons/black/mars-stroke-v.svg);}
+.fa.fa-mars-stroke{background: url(../icons/black/mars-stroke.svg);}
+.fa.fa-mars{background: url(../icons/black/mars.svg);}
+.fa.fa-medkit{background: url(../icons/black/medkit.svg);}
+.fa.fa-meh-o{background: url(../icons/black/meh-o.svg);}
+.fa.fa-mercury{background: url(../icons/black/mercury.svg);}
+.fa.fa-microphone-slash{background: url(../icons/black/microphone-slash.svg);}
+.fa.fa-microphone{background: url(../icons/black/microphone.svg);}
+.fa.fa-minus-circle{background: url(../icons/black/minus-circle.svg);}
+.fa.fa-minus-square-o{background: url(../icons/black/minus-square-o.svg);}
+.fa.fa-minus-square{background: url(../icons/black/minus-square.svg);}
+.fa.fa-minus{background: url(../icons/black/minus.svg);}
+.fa.fa-mobile-phone{background: url(../icons/black/mobile-phone.svg);}
+.fa.fa-mobile{background: url(../icons/black/mobile.svg);}
+.fa.fa-money{background: url(../icons/black/money.svg);}
+.fa.fa-moon-o{background: url(../icons/black/moon-o.svg);}
+.fa.fa-mortar-board{background: url(../icons/black/mortar-board.svg);}
+.fa.fa-motorcycle{background: url(../icons/black/motorcycle.svg);}
+.fa.fa-mouse-pointer{background: url(../icons/black/mouse-pointer.svg);}
+.fa.fa-music{background: url(../icons/black/music.svg);}
+.fa.fa-navicon{background: url(../icons/black/navicon.svg);}
+.fa.fa-neuter{background: url(../icons/black/neuter.svg);}
+.fa.fa-newspaper-o{background: url(../icons/black/newspaper-o.svg);}
+.fa.fa-object-group{background: url(../icons/black/object-group.svg);}
+.fa.fa-object-ungroup{background: url(../icons/black/object-ungroup.svg);}
+.fa.fa-opencart{background: url(../icons/black/opencart.svg);}
+.fa.fa-opera{background: url(../icons/black/opera.svg);}
+.fa.fa-outdent{background: url(../icons/black/outdent.svg);}
+.fa.fa-pagelines{background: url(../icons/black/pagelines.svg);}
+.fa.fa-paint-brush{background: url(../icons/black/paint-brush.svg);}
+.fa.fa-paper-plane-o{background: url(../icons/black/paper-plane-o.svg);}
+.fa.fa-paper-plane{background: url(../icons/black/paper-plane.svg);}
+.fa.fa-paperclip{background: url(../icons/black/paperclip.svg);}
+.fa.fa-paragraph{background: url(../icons/black/paragraph.svg);}
+.fa.fa-paste{background: url(../icons/black/paste.svg);}
+.fa.fa-pause-circle-o{background: url(../icons/black/pause-circle-o.svg);}
+.fa.fa-pause-circle{background: url(../icons/black/pause-circle.svg);}
+.fa.fa-pause{background: url(../icons/black/pause.svg);}
+.fa.fa-paw{background: url(../icons/black/paw.svg);}
+.fa.fa-paypal{background: url(../icons/black/paypal.svg);}
+.fa.fa-pencil-square-o{background: url(../icons/black/pencil-square-o.svg);}
+.fa.fa-pencil-square{background: url(../icons/black/pencil-square.svg);}
+.fa.fa-pencil{background: url(../icons/black/pencil.svg);}
+.fa.fa-percent{background: url(../icons/black/percent.svg);}
+.fa.fa-phone-square{background: url(../icons/black/phone-square.svg);}
+.fa.fa-phone{background: url(../icons/black/phone.svg);}
+.fa.fa-photo{background: url(../icons/black/photo.svg);}
+.fa.fa-picture-o{background: url(../icons/black/picture-o.svg);}
+.fa.fa-pie-chart{background: url(../icons/black/pie-chart.svg);}
+.fa.fa-pinterest-p{background: url(../icons/black/pinterest-p.svg);}
+.fa.fa-pinterest-square{background: url(../icons/black/pinterest-square.svg);}
+.fa.fa-pinterest{background: url(../icons/black/pinterest.svg);}
+.fa.fa-plane{background: url(../icons/black/plane.svg);}
+.fa.fa-play-circle-o{background: url(../icons/black/play-circle-o.svg);}
+.fa.fa-play-circle{background: url(../icons/black/play-circle.svg);}
+.fa.fa-play{background: url(../icons/black/play.svg);}
+.fa.fa-plug{background: url(../icons/black/plug.svg);}
+.fa.fa-plus-circle{background: url(../icons/black/plus-circle.svg);}
+.fa.fa-plus-square-o{background: url(../icons/black/plus-square-o.svg);}
+.fa.fa-plus-square{background: url(../icons/black/plus-square.svg);}
+.fa.fa-plus{background: url(../icons/black/plus.svg);}
+.fa.fa-power-off{background: url(../icons/black/power-off.svg);}
+.fa.fa-print{background: url(../icons/black/print.svg);}
+.fa.fa-puzzle-piece{background: url(../icons/black/puzzle-piece.svg);}
+.fa.fa-qrcode{background: url(../icons/black/qrcode.svg);}
+.fa.fa-question-circle{background: url(../icons/black/question-circle.svg);}
+.fa.fa-question{background: url(../icons/black/question.svg);}
+.fa.fa-quote-left{background: url(../icons/black/quote-left.svg);}
+.fa.fa-quote-right{background: url(../icons/black/quote-right.svg);}
+.fa.fa-random{background: url(../icons/black/random.svg);}
+.fa.fa-recycle{background: url(../icons/black/recycle.svg);}
+.fa.fa-refresh{background: url(../icons/black/refresh.svg);}
+.fa.fa-registered{background: url(../icons/black/registered.svg);}
+.fa.fa-remove{background: url(../icons/black/remove.svg);}
+.fa.fa-reorder{background: url(../icons/black/reorder.svg);}
+.fa.fa-repeat{background: url(../icons/black/repeat.svg);}
+.fa.fa-reply-all{background: url(../icons/black/reply-all.svg);}
+.fa.fa-reply{background: url(../icons/black/reply.svg);}
+.fa.fa-retweet{background: url(../icons/black/retweet.svg);}
+.fa.fa-road{background: url(../icons/black/road.svg);}
+.fa.fa-rocket{background: url(../icons/black/rocket.svg);}
+.fa.fa-rotate-left{background: url(../icons/black/rotate-left.svg);}
+.fa.fa-rotate-right{background: url(../icons/black/rotate-right.svg);}
+.fa.fa-rss-square{background: url(../icons/black/rss-square.svg);}
+.fa.fa-rss{background: url(../icons/black/rss.svg);}
+.fa.fa-rub{background: url(../icons/black/rub.svg);}
+.fa.fa-ruble{background: url(../icons/black/ruble.svg);}
+.fa.fa-safari{background: url(../icons/black/safari.svg);}
+.fa.fa-save{background: url(../icons/black/save.svg);}
+.fa.fa-scissors{background: url(../icons/black/scissors.svg);}
+.fa.fa-search-minus{background: url(../icons/black/search-minus.svg);}
+.fa.fa-search-plus{background: url(../icons/black/search-plus.svg);}
+.fa.fa-search{background: url(../icons/black/search.svg);}
+.fa.fa-send-o{background: url(../icons/black/send-o.svg);}
+.fa.fa-send{background: url(../icons/black/send.svg);}
+.fa.fa-server{background: url(../icons/black/server.svg);}
+.fa.fa-share-alt-square{background: url(../icons/black/share-alt-square.svg);}
+.fa.fa-share-alt{background: url(../icons/black/share-alt.svg);}
+.fa.fa-share-square-o{background: url(../icons/black/share-square-o.svg);}
+.fa.fa-share-square{background: url(../icons/black/share-square.svg);}
+.fa.fa-share{background: url(../icons/black/share.svg);}
+.fa.fa-shield{background: url(../icons/black/shield.svg);}
+.fa.fa-ship{background: url(../icons/black/ship.svg);}
+.fa.fa-shopping-bag{background: url(../icons/black/shopping-bag.svg);}
+.fa.fa-shopping-basket{background: url(../icons/black/shopping-basket.svg);}
+.fa.fa-shopping-cart{background: url(../icons/black/shopping-cart.svg);}
+.fa.fa-sign-in{background: url(../icons/black/sign-in.svg);}
+.fa.fa-sign-out{background: url(../icons/black/sign-out.svg);}
+.fa.fa-signal{background: url(../icons/black/signal.svg);}
+.fa.fa-sitemap{background: url(../icons/black/sitemap.svg);}
+.fa.fa-skype{background: url(../icons/black/skype.svg);}
+.fa.fa-sliders{background: url(../icons/black/sliders.svg);}
+.fa.fa-smile-o{background: url(../icons/black/smile-o.svg);}
+.fa.fa-soccer-ball-o{background: url(../icons/black/soccer-ball-o.svg);}
+.fa.fa-sort-alpha-asc{background: url(../icons/black/sort-alpha-asc.svg);}
+.fa.fa-sort-alpha-desc{background: url(../icons/black/sort-alpha-desc.svg);}
+.fa.fa-sort-amount-asc{background: url(../icons/black/sort-amount-asc.svg);}
+.fa.fa-sort-amount-desc{background: url(../icons/black/sort-amount-desc.svg);}
+.fa.fa-sort-asc{background: url(../icons/black/sort-asc.svg);}
+.fa.fa-sort-desc{background: url(../icons/black/sort-desc.svg);}
+.fa.fa-sort-down{background: url(../icons/black/sort-down.svg);}
+.fa.fa-sort-numeric-asc{background: url(../icons/black/sort-numeric-asc.svg);}
+.fa.fa-sort-numeric-desc{background: url(../icons/black/sort-numeric-desc.svg);}
+.fa.fa-sort-up{background: url(../icons/black/sort-up.svg);}
+.fa.fa-sort{background: url(../icons/black/sort.svg);}
+.fa.fa-space-shuttle{background: url(../icons/black/space-shuttle.svg);}
+.fa.fa-spinner{background: url(../icons/black/spinner.svg);}
+.fa.fa-spoon{background: url(../icons/black/spoon.svg);}
+.fa.fa-spotify{background: url(../icons/black/spotify.svg);}
+.fa.fa-square-o{background: url(../icons/black/square-o.svg);}
+.fa.fa-square{background: url(../icons/black/square.svg);}
+.fa.fa-star-half-empty{background: url(../icons/black/star-half-empty.svg);}
+.fa.fa-star-half-full{background: url(../icons/black/star-half-full.svg);}
+.fa.fa-star-half-o{background: url(../icons/black/star-half-o.svg);}
+.fa.fa-star-half{background: url(../icons/black/star-half.svg);}
+.fa.fa-star-o{background: url(../icons/black/star-o.svg);}
+.fa.fa-star{background: url(../icons/black/star.svg);}
+.fa.fa-step-backward{background: url(../icons/black/step-backward.svg);}
+.fa.fa-step-forward{background: url(../icons/black/step-forward.svg);}
+.fa.fa-stethoscope{background: url(../icons/black/stethoscope.svg);}
+.fa.fa-sticky-note-o{background: url(../icons/black/sticky-note-o.svg);}
+.fa.fa-sticky-note{background: url(../icons/black/sticky-note.svg);}
+.fa.fa-stop-circle-o{background: url(../icons/black/stop-circle-o.svg);}
+.fa.fa-stop-circle{background: url(../icons/black/stop-circle.svg);}
+.fa.fa-stop{background: url(../icons/black/stop.svg);}
+.fa.fa-street-view{background: url(../icons/black/street-view.svg);}
+.fa.fa-strikethrough{background: url(../icons/black/strikethrough.svg);}
+.fa.fa-subscript{background: url(../icons/black/subscript.svg);}
+.fa.fa-subway{background: url(../icons/black/subway.svg);}
+.fa.fa-suitcase{background: url(../icons/black/suitcase.svg);}
+.fa.fa-sun-o{background: url(../icons/black/sun-o.svg);}
+.fa.fa-superscript{background: url(../icons/black/superscript.svg);}
+.fa.fa-support{background: url(../icons/black/support.svg);}
+.fa.fa-table{background: url(../icons/black/table.svg);}
+.fa.fa-tablet{background: url(../icons/black/tablet.svg);}
+.fa.fa-tachometer{background: url(../icons/black/tachometer.svg);}
+.fa.fa-tag{background: url(../icons/black/tag.svg);}
+.fa.fa-tags{background: url(../icons/black/tags.svg);}
+.fa.fa-tasks{background: url(../icons/black/tasks.svg);}
+.fa.fa-taxi{background: url(../icons/black/taxi.svg);}
+.fa.fa-television{background: url(../icons/black/television.svg);}
+.fa.fa-terminal{background: url(../icons/black/terminal.svg);}
+.fa.fa-text-height{background: url(../icons/black/text-height.svg);}
+.fa.fa-text-width{background: url(../icons/black/text-width.svg);}
+.fa.fa-th-large{background: url(../icons/black/th-large.svg);}
+.fa.fa-th-list{background: url(../icons/black/th-list.svg);}
+.fa.fa-th{background: url(../icons/black/th.svg);}
+.fa.fa-thumb-tack{background: url(../icons/black/thumb-tack.svg);}
+.fa.fa-thumbs-down{background: url(../icons/black/thumbs-down.svg);}
+.fa.fa-thumbs-o-down{background: url(../icons/black/thumbs-o-down.svg);}
+.fa.fa-thumbs-o-up{background: url(../icons/black/thumbs-o-up.svg);}
+.fa.fa-thumbs-up{background: url(../icons/black/thumbs-up.svg);}
+.fa.fa-ticket{background: url(../icons/black/ticket.svg);}
+.fa.fa-times-circle-o{background: url(../icons/black/times-circle-o.svg);}
+.fa.fa-times-circle{background: url(../icons/black/times-circle.svg);}
+.fa.fa-times{background: url(../icons/black/times.svg);}
+.fa.fa-tint{background: url(../icons/black/tint.svg);}
+.fa.fa-toggle-down{background: url(../icons/black/toggle-down.svg);}
+.fa.fa-toggle-left{background: url(../icons/black/toggle-left.svg);}
+.fa.fa-toggle-off{background: url(../icons/black/toggle-off.svg);}
+.fa.fa-toggle-on{background: url(../icons/black/toggle-on.svg);}
+.fa.fa-toggle-right{background: url(../icons/black/toggle-right.svg);}
+.fa.fa-toggle-up{background: url(../icons/black/toggle-up.svg);}
+.fa.fa-trademark{background: url(../icons/black/trademark.svg);}
+.fa.fa-train{background: url(../icons/black/train.svg);}
+.fa.fa-transgender-alt{background: url(../icons/black/transgender-alt.svg);}
+.fa.fa-transgender{background: url(../icons/black/transgender.svg);}
+.fa.fa-trash-o{background: url(../icons/black/trash-o.svg);}
+.fa.fa-trash{background: url(../icons/black/trash.svg);}
+.fa.fa-tree{background: url(../icons/black/tree.svg);}
+.fa.fa-trello{background: url(../icons/black/trello.svg);}
+.fa.fa-trophy{background: url(../icons/black/trophy.svg);}
+.fa.fa-truck{background: url(../icons/black/truck.svg);}
+.fa.fa-try{background: url(../icons/black/try.svg);}
+.fa.fa-tty{background: url(../icons/black/tty.svg);}
+.fa.fa-tumblr-square{background: url(../icons/black/tumblr-square.svg);}
+.fa.fa-tumblr{background: url(../icons/black/tumblr.svg);}
+.fa.fa-tv{background: url(../icons/black/tv.svg);}
+.fa.fa-twitter-square{background: url(../icons/black/twitter-square.svg);}
+.fa.fa-twitter{background: url(../icons/black/twitter.svg);}
+.fa.fa-umbrella{background: url(../icons/black/umbrella.svg);}
+.fa.fa-underline{background: url(../icons/black/underline.svg);}
+.fa.fa-undo{background: url(../icons/black/undo.svg);}
+.fa.fa-university{background: url(../icons/black/university.svg);}
+.fa.fa-unlink{background: url(../icons/black/unlink.svg);}
+.fa.fa-unlock-alt{background: url(../icons/black/unlock-alt.svg);}
+.fa.fa-unlock{background: url(../icons/black/unlock.svg);}
+.fa.fa-unsorted{background: url(../icons/black/unsorted.svg);}
+.fa.fa-upload{background: url(../icons/black/upload.svg);}
+.fa.fa-usb{background: url(../icons/black/usb.svg);}
+.fa.fa-usd{background: url(../icons/black/usd.svg);}
+.fa.fa-user-md{background: url(../icons/black/user-md.svg);}
+.fa.fa-user-plus{background: url(../icons/black/user-plus.svg);}
+.fa.fa-user-secret{background: url(../icons/black/user-secret.svg);}
+.fa.fa-user-times{background: url(../icons/black/user-times.svg);}
+.fa.fa-user{background: url(../icons/black/user.svg);}
+.fa.fa-users{background: url(../icons/black/users.svg);}
+.fa.fa-venus-double{background: url(../icons/black/venus-double.svg);}
+.fa.fa-venus-mars{background: url(../icons/black/venus-mars.svg);}
+.fa.fa-venus{background: url(../icons/black/venus.svg);}
+.fa.fa-video-camera{background: url(../icons/black/video-camera.svg);}
+.fa.fa-vimeo{background: url(../icons/black/vimeo.svg);}
+.fa.fa-vimeo-square{background: url(../icons/black/vimeo-square.svg);}
+.fa.fa-vine{background: url(../icons/black/vine.svg);}
+.fa.fa-volume-down{background: url(../icons/black/volume-down.svg);}
+.fa.fa-volume-off{background: url(../icons/black/volume-off.svg);}
+.fa.fa-volume-up{background: url(../icons/black/volume-up.svg);}
+.fa.fa-warning{background: url(../icons/black/warning.svg);}
+.fa.fa-wheelchair{background: url(../icons/black/wheelchair.svg);}
+.fa.fa-wifi{background: url(../icons/black/wifi.svg);}
+.fa.fa-wikipedia-w{background: url(../icons/black/wikipedia-w.svg);}
+.fa.fa-windows{background: url(../icons/black/windows.svg);}
+.fa.fa-won{background: url(../icons/black/won.svg);}
+.fa.fa-wordpress{background: url(../icons/black/wordpress.svg);}
+.fa.fa-wrench{background: url(../icons/black/wrench.svg);}
+.fa.fa-yahoo{background: url(../icons/black/yahoo.svg);}
+.fa.fa-youtube-play{background: url(../icons/black/youtube-play.svg);}
+.fa.fa-youtube-square{background: url(../icons/black/youtube-square.svg);}
+.fa.fa-youtube{background: url(../icons/black/youtube.svg);}
+
+/*WHITE ICONS*/
+.fa.fa-adjust.text-white{background: url(../icons/white/adjust.svg);}
+.fa.fa-align-center.text-white{background: url(../icons/white/align-center.svg);}
+.fa.fa-align-justify.text-white{background: url(../icons/white/align-justify.svg);}
+.fa.fa-align-left.text-white{background: url(../icons/white/align-left.svg);}
+.fa.fa-align-right.text-white{background: url(../icons/white/align-right.svg);}
+.fa.fa-ambulance.text-white{background: url(../icons/white/ambulance.svg);}
+.fa.fa-anchor.text-white{background: url(../icons/white/anchor.svg);}
+.fa.fa-angle-double-down.text-white{background: url(../icons/white/angle-double-down.svg);}
+.fa.fa-angle-double-left.text-white{background: url(../icons/white/angle-double-left.svg);}
+.fa.fa-angle-double-right.text-white{background: url(../icons/white/angle-double-right.svg);}
+.fa.fa-angle-double-up.text-white{background: url(../icons/white/angle-double-up.svg);}
+.fa.fa-angle-down.text-white{background: url(../icons/white/angle-down.svg);}
+.fa.fa-angle-left.text-white{background: url(../icons/white/angle-left.svg);}
+.fa.fa-angle-right.text-white{background: url(../icons/white/angle-right.svg);}
+.fa.fa-angle-up.text-white{background: url(../icons/white/angle-up.svg);}
+.fa.fa-archive.text-white{background: url(../icons/white/archive.svg);}
+.fa.fa-area-chart.text-white{background: url(../icons/white/area-chart.svg);}
+.fa.fa-arrow-circle-down.text-white{background: url(../icons/white/arrow-circle-down.svg);}
+.fa.fa-arrow-circle-left.text-white{background: url(../icons/white/arrow-circle-left.svg);}
+.fa.fa-arrow-circle-right.text-white{background: url(../icons/white/arrow-circle-right.svg);}
+.fa.fa-arrow-circle-up.text-white{background: url(../icons/white/arrow-circle-up.svg);}
+.fa.fa-arrow-circle-o-down.text-white{background: url(../icons/white/arrow-circle-o-down.svg);}
+.fa.fa-arrow-circle-o-left.text-white{background: url(../icons/white/arrow-circle-o-left.svg);}
+.fa.fa-arrow-circle-o-right.text-white{background: url(../icons/white/arrow-circle-o-right.svg);}
+.fa.fa-arrow-circle-o-up.text-white{background: url(../icons/white/arrow-circle-o-up.svg);}
+.fa.fa-arrow-down.text-white{background: url(../icons/white/arrow-down.svg);}
+.fa.fa-arrow-left.text-white{background: url(../icons/white/arrow-left.svg);}
+.fa.fa-arrow-right.text-white{background: url(../icons/white/arrow-right.svg);}
+.fa.fa-arrow-up.text-white{background: url(../icons/white/arrow-up.svg);}
+.fa.fa-arrows-alt.text-white{background: url(../icons/white/arrows-alt.svg);}
+.fa.fa-arrows-h.text-white{background: url(../icons/white/arrows-h.svg);}
+.fa.fa-arrows-v.text-white{background: url(../icons/white/arrows-v.svg);}
+.fa.fa-arrows.text-white{background: url(../icons/white/arrows.svg);}
+.fa.fa-asterisk.text-white{background: url(../icons/white/asterisk.svg);}
+.fa.fa-at.text-white{background: url(../icons/white/at.svg);}
+.fa.fa-automobile.text-white{background: url(../icons/white/automobile.svg);}
+.fa.fa-backward.text-white{background: url(../icons/white/backward.svg);}
+.fa.fa-balance-scale.text-white{background: url(../icons/white/balance-scale.svg);}
+.fa.fa-ban.text-white{background: url(../icons/white/ban.svg);}
+.fa.fa-bank.text-white{background: url(../icons/white/bank.svg);}
+.fa.fa-bar-chart-o.text-white{background: url(../icons/white/bar-chart-o.svg);}
+.fa.fa-bar-chart.text-white{background: url(../icons/white/bar-chart.svg);}
+.fa.fa-barcode.text-white{background: url(../icons/white/barcode.svg);}
+.fa.fa-bars.text-white{background: url(../icons/white/bars.svg);}
+.fa.fa-battery-0.text-white{background: url(../icons/white/battery-0.svg);}
+.fa.fa-battery-1.text-white{background: url(../icons/white/battery-1.svg);}
+.fa.fa-battery-2.text-white{background: url(../icons/white/battery-2.svg);}
+.fa.fa-battery-3.text-white{background: url(../icons/white/battery-3.svg);}
+.fa.fa-battery-4.text-white{background: url(../icons/white/battery-4.svg);}
+.fa.fa-battery-empty.text-white{background: url(../icons/white/battery-empty.svg);}
+.fa.fa-battery-full.text-white{background: url(../icons/white/battery-full.svg);}
+.fa.fa-battery-half.text-white{background: url(../icons/white/battery-half.svg);}
+.fa.fa-battery-quarter.text-white{background: url(../icons/white/battery-quarter.svg);}
+.fa.fa-battery-three-quarters.text-white{background: url(../icons/white/battery-three-quarters.svg);}
+.fa.fa-bed.text-white{background: url(../icons/white/bed.svg);}
+.fa.fa-beer.text-white{background: url(../icons/white/beer.svg);}
+.fa.fa-bell-o.text-white{background: url(../icons/white/bell-o.svg);}
+.fa.fa-bell-slash-o.text-white{background: url(../icons/white/bell-slash-o.svg);}
+.fa.fa-bell-slash.text-white{background: url(../icons/white/bell-slash.svg);}
+.fa.fa-bell.text-white{background: url(../icons/white/bell.svg);}
+.fa.fa-bicycle.text-white{background: url(../icons/white/bicycle.svg);}
+.fa.fa-binoculars.text-white{background: url(../icons/white/binoculars.svg);}
+.fa.fa-birthday-cake.text-white{background: url(../icons/white/birthday-cake.svg);}
+.fa.fa-black-tie.text-white{background: url(../icons/white/black-tie.svg);}
+.fa.fa-bluetooth-b.text-white{background: url(../icons/white/bluetooth-b.svg);}
+.fa.fa-bluetooth.text-white{background: url(../icons/white/bluetooth.svg);}
+.fa.fa-bold.text-white{background: url(../icons/white/bold.svg);}
+.fa.fa-bolt.text-white{background: url(../icons/white/bolt.svg);}
+.fa.fa-bomb.text-white{background: url(../icons/white/bomb.svg);}
+.fa.fa-book.text-white{background: url(../icons/white/book.svg);}
+.fa.fa-bookmark.text-white{background: url(../icons/white/bookmark.svg);}
+.fa.fa-bookmark-o.text-white{background: url(../icons/white/bookmark-o.svg);}
+.fa.fa-briefcase.text-white{background: url(../icons/white/briefcase.svg);}
+.fa.fa-btc.text-white{background: url(../icons/white/btc.svg);}
+.fa.fa-bug.text-white{background: url(../icons/white/bug.svg);}
+.fa.fa-building-o.text-white{background: url(../icons/white/building-o.svg);}
+.fa.fa-building.text-white{background: url(../icons/white/building.svg);}
+.fa.fa-bullhorn.text-white{background: url(../icons/white/bullhorn.svg);}
+.fa.fa-bullseye.text-white{background: url(../icons/white/bullseye.svg);}
+.fa.fa-bus.text-white{background: url(../icons/white/bus.svg);}
+.fa.fa-cab.text-white{background: url(../icons/white/cab.svg);}
+.fa.fa-calculator.text-white{background: url(../icons/white/calculator.svg);}
+.fa.fa-calendar-check-o.text-white{background: url(../icons/white/calendar-check-o.svg);}
+.fa.fa-calendar-minus-o.text-white{background: url(../icons/white/calendar-minus-o.svg);}
+.fa.fa-calendar-o.text-white{background: url(../icons/white/calendar-o.svg);}
+.fa.fa-calendar-plus-o.text-white{background: url(../icons/white/calendar-plus-o.svg);}
+.fa.fa-calendar-times-o.text-white{background: url(../icons/white/calendar-times-o.svg);}
+.fa.fa-calendar.text-white{background: url(../icons/white/calendar.svg);}
+.fa.fa-camera-retro.text-white{background: url(../icons/white/camera-retro.svg);}
+.fa.fa-camera.text-white{background: url(../icons/white/camera.svg);}
+.fa.fa-car.text-white{background: url(../icons/white/car.svg);}
+.fa.fa-caret-down.text-white{background: url(../icons/white/caret-down.svg);}
+.fa.fa-caret-left.text-white{background: url(../icons/white/caret-left.svg);}
+.fa.fa-caret-right.text-white{background: url(../icons/white/caret-right.svg);}
+.fa.fa-caret-square-o-down.text-white{background: url(../icons/white/caret-square-o-down.svg);}
+.fa.fa-caret-square-o-left.text-white{background: url(../icons/white/caret-square-o-left.svg);}
+.fa.fa-caret-square-o-right.text-white{background: url(../icons/white/caret-square-o-right.svg);}
+.fa.fa-caret-square-o-up.text-white{background: url(../icons/white/caret-square-o-up.svg);}
+.fa.fa-caret-up.text-white{background: url(../icons/white/caret-up.svg);}
+.fa.fa-cart-arrow-down.text-white{background: url(../icons/white/cart-arrow-down.svg);}
+.fa.fa-cart-plus.text-white{background: url(../icons/white/cart-plus.svg);}
+.fa.fa-cc-amex.text-white{background: url(../icons/white/cc-amex.svg);}
+.fa.fa-cc-diners-club.text-white{background: url(../icons/white/cc-diners-club.svg);}
+.fa.fa-cc-discover.text-white{background: url(../icons/white/cc-discover.svg);}
+.fa.fa-cc-jcb.text-white{background: url(../icons/white/cc-jcb.svg);}
+.fa.fa-cc-mastercard.text-white{background: url(../icons/white/cc-mastercard.svg);}
+.fa.fa-cc-paypal.text-white{background: url(../icons/white/cc-paypal.svg);}
+.fa.fa-cc-stripe.text-white{background: url(../icons/white/cc-stripe.svg);}
+.fa.fa-cc-visa.text-white{background: url(../icons/white/cc-visa.svg);}
+.fa.fa-cc.text-white{background: url(../icons/white/cc.svg);}
+.fa.fa-certificate.text-white{background: url(../icons/white/certificate.svg);}
+.fa.fa-chain-broken.text-white{background: url(../icons/white/chain-broken.svg);}
+.fa.fa-chain.text-white{background: url(../icons/white/chain.svg);}
+.fa.fa-check-circle-o.text-white{background: url(../icons/white/check-circle-o.svg);}
+.fa.fa-check-circle.text-white{background: url(../icons/white/check-circle.svg);}
+.fa.fa-check-square-o.text-white{background: url(../icons/white/check-square-o.svg);}
+.fa.fa-check-square.text-white{background: url(../icons/white/check-square.svg);}
+.fa.fa-check.text-white{background: url(../icons/white/check.svg);}
+.fa.fa-chevron-circle-down.text-white{background: url(../icons/white/chevron-circle-down.svg);}
+.fa.fa-chevron-circle-left.text-white{background: url(../icons/white/chevron-circle-left.svg);}
+.fa.fa-chevron-circle-right.text-white{background: url(../icons/white/chevron-circle-right.svg);}
+.fa.fa-chevron-circle-up.text-white{background: url(../icons/white/chevron-circle-up.svg);}
+.fa.fa-chevron-down.text-white{background: url(../icons/white/chevron-down.svg);}
+.fa.fa-chevron-left.text-white{background: url(../icons/white/chevron-left.svg);}
+.fa.fa-chevron-right.text-white{background: url(../icons/white/chevron-right.svg);}
+.fa.fa-chevron-up.text-white{background: url(../icons/white/chevron-up.svg);}
+.fa.fa-child.text-white{background: url(../icons/white/child.svg);}
+.fa.fa-chrome.text-white{background: url(../icons/white/chrome.svg);}
+.fa.fa-circle-o-notch.text-white{background: url(../icons/white/circle-o-notch.svg);}
+.fa.fa-circle-o.text-white{background: url(../icons/white/circle-o.svg);}
+.fa.fa-circle-thin.text-white{background: url(../icons/white/circle-thin.svg);}
+.fa.fa-circle.text-white{background: url(../icons/white/circle.svg);}
+.fa.fa-clipboard.text-white{background: url(../icons/white/clipboard.svg);}
+.fa.fa-clock-o.text-white{background: url(../icons/white/clock-o.svg);}
+.fa.fa-clone.text-white{background: url(../icons/white/clone.svg);}
+.fa.fa-close.text-white{background: url(../icons/white/close.svg);}
+.fa.fa-cloud-download.text-white{background: url(../icons/white/cloud-download.svg);}
+.fa.fa-cloud-upload.text-white{background: url(../icons/white/cloud-upload.svg);}
+.fa.fa-cloud.text-white{background: url(../icons/white/cloud.svg);}
+.fa.fa-cny.text-white{background: url(../icons/white/cny.svg);}
+.fa.fa-code-fork.text-white{background: url(../icons/white/code-fork.svg);}
+.fa.fa-code.text-white{background: url(../icons/white/code.svg);}
+.fa.fa-codepen.text-white{background: url(../icons/white/codepen.svg);}
+.fa.fa-codiepie.text-white{background: url(../icons/white/codiepie.svg);}
+.fa.fa-coffee.text-white{background: url(../icons/white/coffee.svg);}
+.fa.fa-cog.text-white{background: url(../icons/white/cog.svg);}
+.fa.fa-cogs.text-white{background: url(../icons/white/cogs.svg);}
+.fa.fa-columns.text-white{background: url(../icons/white/columns.svg);}
+.fa.fa-comment-o.text-white{background: url(../icons/white/comment-o.svg);}
+.fa.fa-comment.text-white{background: url(../icons/white/comment.svg);}
+.fa.fa-commenting-o.text-white{background: url(../icons/white/commenting-o.svg);}
+.fa.fa-commenting.text-white{background: url(../icons/white/commenting.svg);}
+.fa.fa-comments.text-white{background: url(../icons/white/comments.svg);}
+.fa.fa-comments-o.text-white{background: url(../icons/white/comments-o.svg);}
+.fa.fa-compass.text-white{background: url(../icons/white/compass.svg);}
+.fa.fa-compress.text-white{background: url(../icons/white/compress.svg);}
+.fa.fa-connectdevelop.text-white{background: url(../icons/white/connectdevelop.svg);}
+.fa.fa-contao.text-white{background: url(../icons/white/contao.svg);}
+.fa.fa-copy.text-white{background: url(../icons/white/copy.svg);}
+.fa.fa-copyright.text-white{background: url(../icons/white/copyright.svg);}
+.fa.fa-creative-commons.text-white{background: url(../icons/white/creative-commons.svg);}
+.fa.fa-credit-card-alt.text-white{background: url(../icons/white/credit-card-alt.svg);}
+.fa.fa-credit-card.text-white{background: url(../icons/white/credit-card.svg);}
+.fa.fa-crop.text-white{background: url(../icons/white/crop.svg);}
+.fa.fa-crosshairs.text-white{background: url(../icons/white/crosshairs.svg);}
+.fa.fa-css3.text-white{background: url(../icons/white/css3.svg);}
+.fa.fa-cube.text-white{background: url(../icons/white/cube.svg);}
+.fa.fa-cubes.text-white{background: url(../icons/white/cubes.svg);}
+.fa.fa-cut.text-white{background: url(../icons/white/cut.svg);}
+.fa.fa-cutlery.text-white{background: url(../icons/white/cutlery.svg);}
+.fa.fa-dashboard.text-white{background: url(../icons/white/dashboard.svg);}
+.fa.fa-dashcube.text-white{background: url(../icons/white/dashcube.svg);}
+.fa.fa-database.text-white{background: url(../icons/white/database.svg);}
+.fa.fa-dedent.text-white{background: url(../icons/white/dedent.svg);}
+.fa.fa-delicious.text-white{background: url(../icons/white/delicious.svg);}
+.fa.fa-desktop.text-white{background: url(../icons/white/desktop.svg);}
+.fa.fa-diamond.text-white{background: url(../icons/white/diamond.svg);}
+.fa.fa-dollar.text-white{background: url(../icons/white/dollar.svg);}
+.fa.fa-dot-circle-o.text-white{background: url(../icons/white/dot-circle-o.svg);}
+.fa.fa-download.text-white{background: url(../icons/white/download.svg);}
+.fa.fa-edit.text-white{background: url(../icons/white/edit.svg);}
+.fa.fa-edge.text-white{background: url(../icons/white/edge.svg);}
+.fa.fa-eject.text-white{background: url(../icons/white/eject.svg);}
+.fa.fa-ellipsis-h.text-white{background: url(../icons/white/ellipsis-h.svg);}
+.fa.fa-ellipsis-v.text-white{background: url(../icons/white/ellipsis-v.svg);}
+.fa.fa-empire.text-white{background: url(../icons/white/empire.svg);}
+.fa.fa-envelope-o.text-white{background: url(../icons/white/envelope-o.svg);}
+.fa.fa-envelope-square.text-white{background: url(../icons/white/envelope-square.svg);}
+.fa.fa-envelope.text-white{background: url(../icons/white/envelope.svg);}
+.fa.fa-eraser.text-white{background: url(../icons/white/eraser.svg);}
+.fa.fa-eur.text-white{background: url(../icons/white/eur.svg);}
+.fa.fa-euro.text-white{background: url(../icons/white/euro.svg);}
+.fa.fa-exchange.text-white{background: url(../icons/white/exchange.svg);}
+.fa.fa-exchange-circle.text-white{background: url(../icons/white/exchange-circle.svg);}
+.fa.fa-exchange-triangle.text-white{background: url(../icons/white/exchange-triangle.svg);}
+.fa.fa-exclamation-circle.text-white{background: url(../icons/white/exclamation-circle.svg);}
+.fa.fa-exclamation-triangle.text-white{background: url(../icons/white/exclamation-triangle.svg);}
+.fa.fa-exclamation.text-white{background: url(../icons/white/exclamation.svg);}
+.fa.fa-expand.text-white{background: url(../icons/white/expand.svg);}
+.fa.fa-exclamation-circle.text-white{background: url(../icons/white/exclamation-circle.svg);}
+.fa.fa-expeditedssl.text-white{background: url(../icons/white/expeditedssl.svg);}
+.fa.fa-external-link-square.text-white{background: url(../icons/white/external-link-square.svg);}
+.fa.fa-external-link.text-white{background: url(../icons/white/external-link.svg);}
+.fa.fa-eye-slash.text-white{background: url(../icons/white/eye-slash.svg);}
+.fa.fa-eye.text-white{background: url(../icons/white/eye.svg);}
+.fa.fa-eyedropper.text-white{background: url(../icons/white/eyedropper.svg);}
+.fa.fa-fast-backward.text-white{background: url(../icons/white/fast-backward.svg);}
+.fa.fa-fast-forward.text-white{background: url(../icons/white/fast-forward.svg);}
+.fa.fa-fax.text-white{background: url(../icons/white/fax.svg);}
+.fa.fa-feed.text-white{background: url(../icons/white/feed.svg);}
+.fa.fa-female.text-white{background: url(../icons/white/female.svg);}
+.fa.fa-fighter-jet.text-white{background: url(../icons/white/fighter-jet.svg);}
+.fa.fa-file-archive-o.text-white{background: url(../icons/white/file-archive-o.svg);}
+.fa.fa-file-audio-o.text-white{background: url(../icons/white/file-audio-o.svg);}
+.fa.fa-file-code-o.text-white{background: url(../icons/white/file-code-o.svg);}
+.fa.fa-file-excel-o.text-white{background: url(../icons/white/file-excel-o.svg);}
+.fa.fa-file-image-o.text-white{background: url(../icons/white/file-image-o.svg);}
+.fa.fa-file-movie-o.text-white{background: url(../icons/white/file-movie-o.svg);}
+.fa.fa-file-o.text-white{background: url(../icons/white/file-o.svg);}
+.fa.fa-file-pdf-o.text-white{background: url(../icons/white/file-pdf-o.svg);}
+.fa.fa-file-photo-o.text-white{background: url(../icons/white/file-photo-o.svg);}
+.fa.fa-file-picture-o.text-white{background: url(../icons/white/file-picture-o.svg);}
+.fa.fa-file-powerpoint-o.text-white{background: url(../icons/white/file-powerpoint-o.svg);}
+.fa.fa-file-sound-o.text-white{background: url(../icons/white/file-sound-o.svg);}
+.fa.fa-file-text-o.text-white{background: url(../icons/white/file-text-o.svg);}
+.fa.fa-file-text.text-white{background: url(../icons/white/file-text.svg);}
+.fa.fa-file-video-o.text-white{background: url(../icons/white/file-video-o.svg);}
+.fa.fa-file-word-o.text-white{background: url(../icons/white/file-word-o.svg);}
+.fa.fa-file-zip-o.text-white{background: url(../icons/white/file-zip-o.svg);}
+.fa.fa-file.text-white{background: url(../icons/white/file.svg);}
+.fa.fa-files-o.text-white{background: url(../icons/white/files-o.svg);}
+.fa.fa-film.text-white{background: url(../icons/white/film.svg);}
+.fa.fa-filter.text-white{background: url(../icons/white/filter.svg);}
+.fa.fa-fire-extinguisher.text-white{background: url(../icons/white/fire-extinguisher.svg);}
+.fa.fa-fire.text-white{background: url(../icons/white/fire.svg);}
+.fa.fa-firefox.text-white{background: url(../icons/white/firefox.svg);}
+.fa.fa-flag-checkered.text-white{background: url(../icons/white/flag-checkered.svg);}
+.fa.fa-flag-o.text-white{background: url(../icons/white/flag-o.svg);}
+.fa.fa-flag.text-white{background: url(../icons/white/flag.svg);}
+.fa.fa-flash.text-white{background: url(../icons/white/flash.svg);}
+.fa.fa-flask.text-white{background: url(../icons/white/flask.svg);}
+.fa.fa-flickr.text-white{background: url(../icons/white/flickr.svg);}
+.fa.fa-floppy-o.text-white{background: url(../icons/white/floppy-o.svg);}
+.fa.fa-folder-o.text-white{background: url(../icons/white/folder-o.svg);}
+.fa.fa-folder-open-o.text-white{background: url(../icons/white/folder-open-o.svg);}
+.fa.fa-folder-open.text-white{background: url(../icons/white/folder-open.svg);}
+.fa.fa-folder.text-white{background: url(../icons/white/folder.svg);}
+.fa.fa-font.text-white{background: url(../icons/white/font.svg);}
+.fa.fa-fonticons.text-white{background: url(../icons/white/fonticons.svg);}
+.fa.fa-fort-awesome.text-white{background: url(../icons/white/fort-awesome.svg);}
+.fa.fa-forward.text-white{background: url(../icons/white/forward.svg);}
+.fa.fa-frown-o.text-white{background: url(../icons/white/frown-o.svg);}
+.fa.fa-futbol-o.text-white{background: url(../icons/white/futbol-o.svg);}
+.fa.fa-gamepad.text-white{background: url(../icons/white/gamepad.svg);}
+.fa.fa-gavel.text-white{background: url(../icons/white/gavel.svg);}
+.fa.fa-gear.text-white{background: url(../icons/white/gear.svg);}
+.fa.fa-gears.text-white{background: url(../icons/white/gears.svg);}
+.fa.fa-genderless.text-white{background: url(../icons/white/genderless.svg);}
+.fa.fa-get-pocket.text-white{background: url(../icons/white/get-pocket.svg);}
+.fa.fa-gg-circle.text-white{background: url(../icons/white/gg-circle.svg);}
+.fa.fa-gift.text-white{background: url(../icons/white/gift.svg);}
+.fa.fa-git-square.text-white{background: url(../icons/white/git-square.svg);}
+.fa.fa-git.text-white{background: url(../icons/white/git.svg);}
+.fa.fa-github-alt.text-white{background: url(../icons/white/github-alt.svg);}
+.fa.fa-github-square.text-white{background: url(../icons/white/github-square.svg);}
+.fa.fa-github.text-white{background: url(../icons/white/github.svg);}
+.fa.fa-glass.text-white{background: url(../icons/white/glass.svg);}
+.fa.fa-globe.text-white{background: url(../icons/white/globe.svg);}
+.fa.fa-google-plus.text-white{background: url(../icons/white/google-plus.svg);}
+.fa.fa-google-plus-square.text-white{background: url(../icons/white/google-plus-square.svg);}
+.fa.fa-google-wallet.text-white{background: url(../icons/white/google-wallet.svg);}
+.fa.fa-google.text-white{background: url(../icons/white/google.svg);}
+.fa.fa-graduation-cap.text-white{background: url(../icons/white/graduation-cap.svg);}
+.fa.fa-group.text-white{background: url(../icons/white/group.svg);}
+.fa.fa-h-square.text-white{background: url(../icons/white/h-square.svg);}
+.fa.fa-hand-grab-o.text-white{background: url(../icons/white/hand-grab-o.svg);}
+.fa.fa-hand-lizard-o.text-white{background: url(../icons/white/hand-lizard-o.svg);}
+.fa.fa-hand-o-down.text-white{background: url(../icons/white/hand-o-down.svg);}
+.fa.fa-hand-o-left.text-white{background: url(../icons/white/hand-o-left.svg);}
+.fa.fa-hand-o-right.text-white{background: url(../icons/white/hand-o-right.svg);}
+.fa.fa-hand-o-up.text-white{background: url(../icons/white/hand-o-up.svg);}
+.fa.fa-hand-paper-o.text-white{background: url(../icons/white/hand-paper-o.svg);}
+.fa.fa-hand-peace-o.text-white{background: url(../icons/white/hand-peace-o.svg);}
+.fa.fa-hand-pointer-o.text-white{background: url(../icons/white/hand-pointer-o.svg);}
+.fa.fa-hand-rock-o.text-white{background: url(../icons/white/hand-rock-o.svg);}
+.fa.fa-hand-scissors-o.text-white{background: url(../icons/white/hand-scissors-o.svg);}
+.fa.fa-hand-spock-o.text-white{background: url(../icons/white/hand-spock-o.svg);}
+.fa.fa-hand-stop-o.text-white{background: url(../icons/white/hand-stop-o.svg);}
+.fa.fa-hashtag.text-white{background: url(../icons/white/hashtag.svg);}
+.fa.fa-hdd-o.text-white{background: url(../icons/white/hdd-o.svg);}
+.fa.fa-header.text-white{background: url(../icons/white/header.svg);}
+.fa.fa-headphones.text-white{background: url(../icons/white/headphones.svg);}
+.fa.fa-heart-o.text-white{background: url(../icons/white/heart-o.svg);}
+.fa.fa-heart.text-white{background: url(../icons/white/heart.svg);}
+.fa.fa-heartbeat.text-white{background: url(../icons/white/heartbeat.svg);}
+.fa.fa-history.text-white{background: url(../icons/white/history.svg);}
+.fa.fa-home.text-white{background: url(../icons/white/home.svg);}
+.fa.fa-hospital-o.text-white{background: url(../icons/white/hospital-o.svg);}
+.fa.fa-hotel.text-white{background: url(../icons/white/hotel.svg);}
+.fa.fa-hourglass-1.text-white{background: url(../icons/white/hourglass-1.svg);}
+.fa.fa-hourglass-2.text-white{background: url(../icons/white/hourglass-2.svg);}
+.fa.fa-hourglass-3.text-white{background: url(../icons/white/hourglass-3.svg);}
+.fa.fa-hourglass-end.text-white{background: url(../icons/white/hourglass-end.svg);}
+.fa.fa-hourglass-half.text-white{background: url(../icons/white/hourglass-half.svg);}
+.fa.fa-hourglass-o.text-white{background: url(../icons/white/hourglass-o.svg);}
+.fa.fa-hourglass-start.text-white{background: url(../icons/white/hourglass-start.svg);}
+.fa.fa-hourglass.text-white{background: url(../icons/white/hourglass.svg);}
+.fa.fa-html5.text-white{background: url(../icons/white/html5.svg);}
+.fa.fa-image.text-white{background: url(../icons/white/image.svg);}
+.fa.fa-inbox.text-white{background: url(../icons/white/inbox.svg);}
+.fa.fa-indent.text-white{background: url(../icons/white/indent.svg);}
+.fa.fa-industry.text-white{background: url(../icons/white/industry.svg);}
+.fa.fa-info-circle.text-white{background: url(../icons/white/info-circle.svg);}
+.fa.fa-info.text-white{background: url(../icons/white/info.svg);}
+.fa.fa-instagram.text-white{background: url(../icons/white/instagram.svg);}
+.fa.fa-institution.text-white{background: url(../icons/white/institution.svg);}
+.fa.fa-internet-explorer.text-white{background: url(../icons/white/internet-explorer.svg);}
+.fa.fa-italic.text-white{background: url(../icons/white/italic.svg);}
+.fa.fa-key.text-white{background: url(../icons/white/key.svg);}
+.fa.fa-keyboard-o.text-white{background: url(../icons/white/html5.svg);}
+.fa.fa-language.text-white{background: url(../icons/white/language.svg);}
+.fa.fa-laptop.text-white{background: url(../icons/white/laptop.svg);}
+.fa.fa-leaf.text-white{background: url(../icons/white/leaf.svg);}
+.fa.fa-legal.text-white{background: url(../icons/white/legal.svg);}
+.fa.fa-level-down.text-white{background: url(../icons/white/level-down.svg);}
+.fa.fa-level-up.text-white{background: url(../icons/white/level-up.svg);}
+.fa.fa-life-bouy.text-white{background: url(../icons/white/life-bouy.svg);}
+.fa.fa-life-ring.text-white{background: url(../icons/white/life-ring.svg);}
+.fa.fa-life-saver.text-white{background: url(../icons/white/life-saver.svg);}
+.fa.fa-lightbulb-o.text-white{background: url(../icons/white/lightbulb-o.svg);}
+.fa.fa-line-chart.text-white{background: url(../icons/white/line-chart.svg);}
+.fa.fa-link.text-white{background: url(../icons/white/link.svg);}
+.fa.fa-linkedin-square.text-white{background: url(../icons/white/linkedin-square.svg);}
+.fa.fa-linkedin.text-white{background: url(../icons/white/linkedin.svg);}
+.fa.fa-linux.text-white{background: url(../icons/white/linux.svg);}
+.fa.fa-list-alt.text-white{background: url(../icons/white/list-alt.svg);}
+.fa.fa-list-ol.text-white{background: url(../icons/white/list-ol.svg);}
+.fa.fa-list-ul.text-white{background: url(../icons/white/list-ul.svg);}
+.fa.fa-list.text-white{background: url(../icons/white/list.svg);}
+.fa.fa-location-arrow.text-white{background: url(../icons/white/location-arrow.svg);}
+.fa.fa-lock.text-white{background: url(../icons/white/lock.svg);}
+.fa.fa-long-arrow-down.text-white{background: url(../icons/white/long-arrow-down.svg);}
+.fa.fa-long-arrow-left.text-white{background: url(../icons/white/long-arrow-left.svg);}
+.fa.fa-long-arrow-right.text-white{background: url(../icons/white/long-arrow-right.svg);}
+.fa.fa-long-arrow-up.text-white{background: url(../icons/white/long-arrow-up.svg);}
+.fa.fa-magic.text-white{background: url(../icons/white/magic.svg);}
+.fa.fa-magnet.text-white{background: url(../icons/white/magnet.svg);}
+.fa.fa-mail-forward.text-white{background: url(../icons/white/mail-forward.svg);}
+.fa.fa-mail-reply-all.text-white{background: url(../icons/white/mail-reply-all.svg);}
+.fa.fa-mail-reply.text-white{background: url(../icons/white/mail-reply.svg);}
+.fa.fa-male.text-white{background: url(../icons/white/male.svg);}
+.fa.fa-map-marker.text-white{background: url(../icons/white/map-marker.svg);}
+.fa.fa-map-o.text-white{background: url(../icons/white/map-o.svg);}
+.fa.fa-map-pin.text-white{background: url(../icons/white/map-pin.svg);}
+.fa.fa-map-signs.text-white{background: url(../icons/white/map-signs.svg);}
+.fa.fa-map.text-white{background: url(../icons/white/map.svg);}
+.fa.fa-mars-double.text-white{background: url(../icons/white/mars-double.svg);}
+.fa.fa-mars-stroke-h.text-white{background: url(../icons/white/mars-stroke-h.svg);}
+.fa.fa-mars-stroke-v.text-white{background: url(../icons/white/mars-stroke-v.svg);}
+.fa.fa-mars-stroke.text-white{background: url(../icons/white/mars-stroke.svg);}
+.fa.fa-mars.text-white{background: url(../icons/white/mars.svg);}
+.fa.fa-medkit.text-white{background: url(../icons/white/medkit.svg);}
+.fa.fa-meh-o.text-white{background: url(../icons/white/meh-o.svg);}
+.fa.fa-mercury.text-white{background: url(../icons/white/mercury.svg);}
+.fa.fa-microphone-slash.text-white{background: url(../icons/white/microphone-slash.svg);}
+.fa.fa-microphone.text-white{background: url(../icons/white/microphone.svg);}
+.fa.fa-minus-circle.text-white{background: url(../icons/white/minus-circle.svg);}
+.fa.fa-minus-square-o.text-white{background: url(../icons/white/minus-square-o.svg);}
+.fa.fa-minus-square.text-white{background: url(../icons/white/minus-square.svg);}
+.fa.fa-minus.text-white{background: url(../icons/white/minus.svg);}
+.fa.fa-mobile-phone.text-white{background: url(../icons/white/mobile-phone.svg);}
+.fa.fa-mobile.text-white{background: url(../icons/white/mobile.svg);}
+.fa.fa-money.text-white{background: url(../icons/white/money.svg);}
+.fa.fa-moon-o.text-white{background: url(../icons/white/moon-o.svg);}
+.fa.fa-mortar-board.text-white{background: url(../icons/white/mortar-board.svg);}
+.fa.fa-motorcycle.text-white{background: url(../icons/white/motorcycle.svg);}
+.fa.fa-mouse-pointer.text-white{background: url(../icons/white/mouse-pointer.svg);}
+.fa.fa-music.text-white{background: url(../icons/white/music.svg);}
+.fa.fa-navicon.text-white{background: url(../icons/white/navicon.svg);}
+.fa.fa-neuter.text-white{background: url(../icons/white/neuter.svg);}
+.fa.fa-newspaper-o.text-white{background: url(../icons/white/newspaper-o.svg);}
+.fa.fa-object-group.text-white{background: url(../icons/white/object-group.svg);}
+.fa.fa-object-ungroup.text-white{background: url(../icons/white/object-ungroup.svg);}
+.fa.fa-opencart.text-white{background: url(../icons/white/opencart.svg);}
+.fa.fa-opera.text-white{background: url(../icons/white/opera.svg);}
+.fa.fa-outdent.text-white{background: url(../icons/white/outdent.svg);}
+.fa.fa-pagelines.text-white{background: url(../icons/white/pagelines.svg);}
+.fa.fa-paint-brush.text-white{background: url(../icons/white/paint-brush.svg);}
+.fa.fa-paper-plane-o.text-white{background: url(../icons/white/paper-plane-o.svg);}
+.fa.fa-paper-plane.text-white{background: url(../icons/white/paper-plane.svg);}
+.fa.fa-paperclip.text-white{background: url(../icons/white/paperclip.svg);}
+.fa.fa-paragraph.text-white{background: url(../icons/white/paragraph.svg);}
+.fa.fa-paste.text-white{background: url(../icons/white/paste.svg);}
+.fa.fa-pause-circle-o.text-white{background: url(../icons/white/pause-circle-o.svg);}
+.fa.fa-pause-circle.text-white{background: url(../icons/white/pause-circle.svg);}
+.fa.fa-pause.text-white{background: url(../icons/white/pause.svg);}
+.fa.fa-paw.text-white{background: url(../icons/white/paw.svg);}
+.fa.fa-paypal.text-white{background: url(../icons/white/paypal.svg);}
+.fa.fa-pencil-square-o.text-white{background: url(../icons/white/pencil-square-o.svg);}
+.fa.fa-pencil-square.text-white{background: url(../icons/white/pencil-square.svg);}
+.fa.fa-pencil.text-white{background: url(../icons/white/pencil.svg);}
+.fa.fa-percent.text-white{background: url(../icons/white/percent.svg);}
+.fa.fa-phone-square.text-white{background: url(../icons/white/phone-square.svg);}
+.fa.fa-phone.text-white{background: url(../icons/white/phone.svg);}
+.fa.fa-photo.text-white{background: url(../icons/white/photo.svg);}
+.fa.fa-picture-o.text-white{background: url(../icons/white/picture-o.svg);}
+.fa.fa-pie-chart.text-white{background: url(../icons/white/pie-chart.svg);}
+.fa.fa-pinterest-p.text-white{background: url(../icons/white/pinterest-p.svg);}
+.fa.fa-pinterest-square.text-white{background: url(../icons/white/pinterest-square.svg);}
+.fa.fa-pinterest.text-white{background: url(../icons/white/pinterest.svg);}
+.fa.fa-plane.text-white{background: url(../icons/white/plane.svg);}
+.fa.fa-play-circle-o.text-white{background: url(../icons/white/play-circle-o.svg);}
+.fa.fa-play-circle.text-white{background: url(../icons/white/play-circle.svg);}
+.fa.fa-play.text-white{background: url(../icons/white/play.svg);}
+.fa.fa-plug.text-white{background: url(../icons/white/plug.svg);}
+.fa.fa-plus-circle.text-white{background: url(../icons/white/plus-circle.svg);}
+.fa.fa-plus-square-o.text-white{background: url(../icons/white/plus-square-o.svg);}
+.fa.fa-plus-square.text-white{background: url(../icons/white/plus-square.svg);}
+.fa.fa-plus.text-white{background: url(../icons/white/plus.svg);}
+.fa.fa-power-off.text-white{background: url(../icons/white/power-off.svg);}
+.fa.fa-print.text-white{background: url(../icons/white/print.svg);}
+.fa.fa-puzzle-piece.text-white{background: url(../icons/white/puzzle-piece.svg);}
+.fa.fa-qrcode.text-white{background: url(../icons/white/qrcode.svg);}
+.fa.fa-question-circle.text-white{background: url(../icons/white/question-circle.svg);}
+.fa.fa-question.text-white{background: url(../icons/white/question.svg);}
+.fa.fa-quote-left.text-white{background: url(../icons/white/quote-left.svg);}
+.fa.fa-quote-right.text-white{background: url(../icons/white/quote-right.svg);}
+.fa.fa-random.text-white{background: url(../icons/white/random.svg);}
+.fa.fa-recycle.text-white{background: url(../icons/white/recycle.svg);}
+.fa.fa-refresh.text-white{background: url(../icons/white/refresh.svg);}
+.fa.fa-registered.text-white{background: url(../icons/white/registered.svg);}
+.fa.fa-remove.text-white{background: url(../icons/white/remove.svg);}
+.fa.fa-reorder.text-white{background: url(../icons/white/reorder.svg);}
+.fa.fa-repeat.text-white{background: url(../icons/white/repeat.svg);}
+.fa.fa-reply-all.text-white{background: url(../icons/white/reply-all.svg);}
+.fa.fa-reply.text-white{background: url(../icons/white/reply.svg);}
+.fa.fa-retweet.text-white{background: url(../icons/white/retweet.svg);}
+.fa.fa-road.text-white{background: url(../icons/white/road.svg);}
+.fa.fa-rocket.text-white{background: url(../icons/white/rocket.svg);}
+.fa.fa-rotate-left.text-white{background: url(../icons/white/rotate-left.svg);}
+.fa.fa-rotate-right.text-white{background: url(../icons/white/rotate-right.svg);}
+.fa.fa-rss-square.text-white{background: url(../icons/white/rss-square.svg);}
+.fa.fa-rss.text-white{background: url(../icons/white/rss.svg);}
+.fa.fa-rub.text-white{background: url(../icons/white/rub.svg);}
+.fa.fa-ruble.text-white{background: url(../icons/white/ruble.svg);}
+.fa.fa-safari.text-white{background: url(../icons/white/safari.svg);}
+.fa.fa-save.text-white{background: url(../icons/white/save.svg);}
+.fa.fa-scissors.text-white{background: url(../icons/white/scissors.svg);}
+.fa.fa-search-minus.text-white{background: url(../icons/white/search-minus.svg);}
+.fa.fa-search-plus.text-white{background: url(../icons/white/search-plus.svg);}
+.fa.fa-search.text-white{background: url(../icons/white/search.svg);}
+.fa.fa-send-o.text-white{background: url(../icons/white/send-o.svg);}
+.fa.fa-send.text-white{background: url(../icons/white/send.svg);}
+.fa.fa-server.text-white{background: url(../icons/white/server.svg);}
+.fa.fa-share-alt-square.text-white{background: url(../icons/white/share-alt-square.svg);}
+.fa.fa-share-alt.text-white{background: url(../icons/white/share-alt.svg);}
+.fa.fa-share-square-o.text-white{background: url(../icons/white/share-square-o.svg);}
+.fa.fa-share-square.text-white{background: url(../icons/white/share-square.svg);}
+.fa.fa-share.text-white{background: url(../icons/white/share.svg);}
+.fa.fa-shield.text-white{background: url(../icons/white/shield.svg);}
+.fa.fa-ship.text-white{background: url(../icons/white/ship.svg);}
+.fa.fa-shopping-bag.text-white{background: url(../icons/white/shopping-bag.svg);}
+.fa.fa-shopping-basket.text-white{background: url(../icons/white/shopping-basket.svg);}
+.fa.fa-shopping-cart.text-white{background: url(../icons/white/shopping-cart.svg);}
+.fa.fa-sign-in.text-white{background: url(../icons/white/sign-in.svg);}
+.fa.fa-sign-out.text-white{background: url(../icons/white/sign-out.svg);}
+.fa.fa-signal.text-white{background: url(../icons/white/signal.svg);}
+.fa.fa-sitemap.text-white{background: url(../icons/white/sitemap.svg);}
+.fa.fa-skype.text-white{background: url(../icons/white/skype.svg);}
+.fa.fa-sliders.text-white{background: url(../icons/white/sliders.svg);}
+.fa.fa-smile-o.text-white{background: url(../icons/white/smile-o.svg);}
+.fa.fa-soccer-ball-o.text-white{background: url(../icons/white/soccer-ball-o.svg);}
+.fa.fa-sort-alpha-asc.text-white{background: url(../icons/white/sort-alpha-asc.svg);}
+.fa.fa-sort-alpha-desc.text-white{background: url(../icons/white/sort-alpha-desc.svg);}
+.fa.fa-sort-amount-asc.text-white{background: url(../icons/white/sort-amount-asc.svg);}
+.fa.fa-sort-amount-desc.text-white{background: url(../icons/white/sort-amount-desc.svg);}
+.fa.fa-sort-asc.text-white{background: url(../icons/white/sort-asc.svg);}
+.fa.fa-sort-desc.text-white{background: url(../icons/white/sort-desc.svg);}
+.fa.fa-sort-down.text-white{background: url(../icons/white/sort-down.svg);}
+.fa.fa-sort-numeric-asc.text-white{background: url(../icons/white/sort-numeric-asc.svg);}
+.fa.fa-sort-numeric-desc.text-white{background: url(../icons/white/sort-numeric-desc.svg);}
+.fa.fa-sort-up.text-white{background: url(../icons/white/sort-up.svg);}
+.fa.fa-sort.text-white{background: url(../icons/white/sort.svg);}
+.fa.fa-space-shuttle.text-white{background: url(../icons/white/space-shuttle.svg);}
+.fa.fa-spinner.text-white{background: url(../icons/white/spinner.svg);}
+.fa.fa-spoon.text-white{background: url(../icons/white/spoon.svg);}
+.fa.fa-spotify.text-white{background: url(../icons/white/spotify.svg);}
+.fa.fa-square-o.text-white{background: url(../icons/white/square-o.svg);}
+.fa.fa-square.text-white{background: url(../icons/white/square.svg);}
+.fa.fa-star-half-empty.text-white{background: url(../icons/white/star-half-empty.svg);}
+.fa.fa-star-half-full.text-white{background: url(../icons/white/star-half-full.svg);}
+.fa.fa-star-half-o.text-white{background: url(../icons/white/star-half-o.svg);}
+.fa.fa-star-half.text-white{background: url(../icons/white/star-half.svg);}
+.fa.fa-star-o.text-white{background: url(../icons/white/star-o.svg);}
+.fa.fa-star.text-white{background: url(../icons/white/star.svg);}
+.fa.fa-step-backward.text-white{background: url(../icons/white/step-backward.svg);}
+.fa.fa-step-forward.text-white{background: url(../icons/white/step-forward.svg);}
+.fa.fa-stethoscope.text-white{background: url(../icons/white/stethoscope.svg);}
+.fa.fa-sticky-note-o.text-white{background: url(../icons/white/sticky-note-o.svg);}
+.fa.fa-sticky-note.text-white{background: url(../icons/white/sticky-note.svg);}
+.fa.fa-stop-circle-o.text-white{background: url(../icons/white/stop-circle-o.svg);}
+.fa.fa-stop-circle.text-white{background: url(../icons/white/stop-circle.svg);}
+.fa.fa-stop.text-white{background: url(../icons/white/stop.svg);}
+.fa.fa-street-view.text-white{background: url(../icons/white/street-view.svg);}
+.fa.fa-strikethrough.text-white{background: url(../icons/white/strikethrough.svg);}
+.fa.fa-subscript.text-white{background: url(../icons/white/subscript.svg);}
+.fa.fa-subway.text-white{background: url(../icons/white/subway.svg);}
+.fa.fa-suitcase.text-white{background: url(../icons/white/suitcase.svg);}
+.fa.fa-sun-o.text-white{background: url(../icons/white/sun-o.svg);}
+.fa.fa-superscript.text-white{background: url(../icons/white/superscript.svg);}
+.fa.fa-support.text-white{background: url(../icons/white/support.svg);}
+.fa.fa-table.text-white{background: url(../icons/white/table.svg);}
+.fa.fa-tablet.text-white{background: url(../icons/white/tablet.svg);}
+.fa.fa-tachometer.text-white{background: url(../icons/white/tachometer.svg);}
+.fa.fa-tag.text-white{background: url(../icons/white/tag.svg);}
+.fa.fa-tags.text-white{background: url(../icons/white/tags.svg);}
+.fa.fa-tasks.text-white{background: url(../icons/white/tasks.svg);}
+.fa.fa-taxi.text-white{background: url(../icons/white/taxi.svg);}
+.fa.fa-television.text-white{background: url(../icons/white/television.svg);}
+.fa.fa-terminal.text-white{background: url(../icons/white/terminal.svg);}
+.fa.fa-text-height.text-white{background: url(../icons/white/text-height.svg);}
+.fa.fa-text-width.text-white{background: url(../icons/white/text-width.svg);}
+.fa.fa-th-large.text-white{background: url(../icons/white/th-large.svg);}
+.fa.fa-th-list.text-white{background: url(../icons/white/th-list.svg);}
+.fa.fa-th.text-white{background: url(../icons/white/th.svg);}
+.fa.fa-thumb-tack.text-white{background: url(../icons/white/thumb-tack.svg);}
+.fa.fa-thumbs-down.text-white{background: url(../icons/white/thumbs-down.svg);}
+.fa.fa-thumbs-o-down.text-white{background: url(../icons/white/thumbs-o-down.svg);}
+.fa.fa-thumbs-o-up.text-white{background: url(../icons/white/thumbs-o-up.svg);}
+.fa.fa-thumbs-up.text-white{background: url(../icons/white/thumbs-up.svg);}
+.fa.fa-ticket.text-white{background: url(../icons/white/ticket.svg);}
+.fa.fa-times-circle-o.text-white{background: url(../icons/white/times-circle-o.svg);}
+.fa.fa-times-circle.text-white{background: url(../icons/white/times-circle.svg);}
+.fa.fa-times.text-white{background: url(../icons/white/times.svg);}
+.fa.fa-tint.text-white{background: url(../icons/white/tint.svg);}
+.fa.fa-toggle-down.text-white{background: url(../icons/white/toggle-down.svg);}
+.fa.fa-toggle-left.text-white{background: url(../icons/white/toggle-left.svg);}
+.fa.fa-toggle-off.text-white{background: url(../icons/white/toggle-off.svg);}
+.fa.fa-toggle-on.text-white{background: url(../icons/white/toggle-on.svg);}
+.fa.fa-toggle-right.text-white{background: url(../icons/white/toggle-right.svg);}
+.fa.fa-toggle-up.text-white{background: url(../icons/white/toggle-up.svg);}
+.fa.fa-trademark.text-white{background: url(../icons/white/trademark.svg);}
+.fa.fa-train.text-white{background: url(../icons/white/train.svg);}
+.fa.fa-transgender-alt.text-white{background: url(../icons/white/transgender-alt.svg);}
+.fa.fa-transgender.text-white{background: url(../icons/white/transgender.svg);}
+.fa.fa-trash-o.text-white{background: url(../icons/white/trash-o.svg);}
+.fa.fa-trash.text-white{background: url(../icons/white/trash.svg);}
+.fa.fa-tree.text-white{background: url(../icons/white/tree.svg);}
+.fa.fa-trello.text-white{background: url(../icons/white/trello.svg);}
+.fa.fa-trophy.text-white{background: url(../icons/white/trophy.svg);}
+.fa.fa-truck.text-white{background: url(../icons/white/truck.svg);}
+.fa.fa-try.text-white{background: url(../icons/white/try.svg);}
+.fa.fa-tty.text-white{background: url(../icons/white/tty.svg);}
+.fa.fa-tumblr-square.text-white{background: url(../icons/white/tumblr-square.svg);}
+.fa.fa-tumblr.text-white{background: url(../icons/white/tumblr.svg);}
+.fa.fa-tv.text-white{background: url(../icons/white/tv.svg);}
+.fa.fa-twitter-square.text-white{background: url(../icons/white/twitter-square.svg);}
+.fa.fa-twitter.text-white{background: url(../icons/white/twitter.svg);}
+.fa.fa-umbrella.text-white{background: url(../icons/white/umbrella.svg);}
+.fa.fa-underline.text-white{background: url(../icons/white/underline.svg);}
+.fa.fa-undo.text-white{background: url(../icons/white/undo.svg);}
+.fa.fa-university.text-white{background: url(../icons/white/university.svg);}
+.fa.fa-unlink.text-white{background: url(../icons/white/unlink.svg);}
+.fa.fa-unlock-alt.text-white{background: url(../icons/white/unlock-alt.svg);}
+.fa.fa-unlock.text-white{background: url(../icons/white/unlock.svg);}
+.fa.fa-unsorted.text-white{background: url(../icons/white/unsorted.svg);}
+.fa.fa-upload.text-white{background: url(../icons/white/upload.svg);}
+.fa.fa-usb.text-white{background: url(../icons/white/usb.svg);}
+.fa.fa-usd.text-white{background: url(../icons/white/usd.svg);}
+.fa.fa-user-md.text-white{background: url(../icons/white/user-md.svg);}
+.fa.fa-user-plus.text-white{background: url(../icons/white/user-plus.svg);}
+.fa.fa-user-secret.text-white{background: url(../icons/white/user-secret.svg);}
+.fa.fa-user-times.text-white{background: url(../icons/white/user-times.svg);}
+.fa.fa-user.text-white{background: url(../icons/white/user.svg);}
+.fa.fa-users.text-white{background: url(../icons/white/users.svg);}
+.fa.fa-venus-double.text-white{background: url(../icons/white/venus-double.svg);}
+.fa.fa-venus-mars.text-white{background: url(../icons/white/venus-mars.svg);}
+.fa.fa-venus.text-white{background: url(../icons/white/venus.svg);}
+.fa.fa-video-camera.text-white{background: url(../icons/white/video-camera.svg);}
+.fa.fa-vimeo.text-white{background: url(../icons/white/vimeo.svg);}
+.fa.fa-vimeo-square.text-white{background: url(../icons/white/vimeo-square.svg);}
+.fa.fa-vine.text-white{background: url(../icons/white/vine.svg);}
+.fa.fa-volume-down.text-white{background: url(../icons/white/volume-down.svg);}
+.fa.fa-volume-off.text-white{background: url(../icons/white/volume-off.svg);}
+.fa.fa-volume-up.text-white{background: url(../icons/white/volume-up.svg);}
+.fa.fa-warning.text-white{background: url(../icons/white/warning.svg);}
+.fa.fa-wheelchair.text-white{background: url(../icons/white/wheelchair.svg);}
+.fa.fa-wifi.text-white{background: url(../icons/white/wifi.svg);}
+.fa.fa-wikipedia-w.text-white{background: url(../icons/white/wikipedia-w.svg);}
+.fa.fa-windows.text-white{background: url(../icons/white/windows.svg);}
+.fa.fa-won.text-white{background: url(../icons/white/won.svg);}
+.fa.fa-wordpress.text-white{background: url(../icons/white/wordpress.svg);}
+.fa.fa-wrench.text-white{background: url(../icons/white/wrench.svg);}
+.fa.fa-yahoo.text-white{background: url(../icons/white/yahoo.svg);}
+.fa.fa-youtube-play.text-white{background: url(../icons/white/youtube-play.svg);}
+.fa.fa-youtube-square.text-white{background: url(../icons/white/youtube-square.svg);}
+.fa.fa-youtube.text-white{background: url(../icons/white/youtube.svg);}
+
+
+/* SITE STATUS */
+.site-status{
+	background-color: #000;
+	padding: 2px 10px 2px 0;
+	text-align: right;
+	color: #fff;
+	font-size: 11px !important;
+	line-height: 10px;
+}
+.status-green{
+	background-color: #44ae46;
+	border-bottom: 1px solid #1e6920;
+	background-image: -moz-linear-gradient(top, #36ab3c, #308b32);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#36ab3c), to(#308b32));
+  	background-image: -webkit-linear-gradient(top, #36ab3c, #308b32);
+  	background-image: -o-linear-gradient(top, #36ab3c, #308b32);
+  	background-image: linear-gradient(to bottom, #36ab3c, #308b32);
+  	background-repeat: repeat-x;
+}
+.status-red{
+	background-color: #44ae46;
+	border-bottom: 1px solid #752626;
+	background-image: -moz-linear-gradient(top, #ab3636, #8b3030);
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ab3636), to(#8b3030));
+  	background-image: -webkit-linear-gradient(top, #ab3636, #8b3030);
+  	background-image: -o-linear-gradient(top, #ab3636, #8b3030);
+  	background-image: linear-gradient(to bottom, #ab3636, #8b3030);
+  	background-repeat: repeat-x;
+}
+
+/*LOGIN*/
+.login-bg{
+	overflow: hidden;
+	position:fixed;
+	top: 0;left:0;
+	width: 100%;
+}
+
+.login-bg img{
+	min-width: 100%;
+	min-height:100%;
+}
+
+.login-header{
+	background: rgba(0, 0, 0, 0.2);
+	height: 25px;
+	width: 100%;
+	position: relative;
+}
+
+.login-footer{
+	background: rgba(0, 0, 0, 0.4);
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: #ccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.login-footer a{
+	color: #fff;
+	font-size: 12px;
+	padding: 8px;
+	margin: 0;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.login-footer a:hover{
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.2);
+}
+	
+.login{margin-top: 8%;position: relative;}
+
+.login-box{
+	background: rgba(0, 0, 0, 0.5);
+	min-height: 100px;
+	padding: 15px;
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.25);
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	
+	behavior: url(assets/pie/PIE.htc);
+}
+	
+.login-box input{margin-bottom: 8px;}
+
+.login-logo{
+	width:100%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.login-logo p{text-align: center;}
+
+.login-btn{padding: 20px 0 5px 0;}
+.login-btn .btn{margin-bottom: 3px;}
+
+.login-block{
+	margin: auto auto;
+	margin-top: 7%;
+	padding-top: 30px;
+	max-width: 960px;
+}
+
+.login-msg{
+	margin-top: 20px;
+	height:250px;
+	color: #fff;
+	padding: 0 25px;
+}
+
+.login-block .login-btn,
+.login-block .login-msg{
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.login-block .login-btn{
+	border-top: none;
+	margin-top: 0;
+}
+
+.login-block .login-logo{height: 150px; margin:0;padding-top: 35px;}
+
+.login-block .login-logo p{padding-right: 20px;}
+
+@media (min-width: 501px) and (max-width: 767px) {
+	.login-block{
+		margin-left: 110px;
+		margin-right: 110px;
+		margin-top: 3%;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+	.login-block{
+		position: fixed;
+		width: 100%;
+		margin: 0;
+		padding-left: 50px;
+		padding-right: 50px;
+		top: 0;
+		left: 0;
+		bottom: 35px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	.login-block .login-logo{
+		height: auto;
+	}
+	
+	.login-block .login-logo img{
+		width: 140px;
+		height: auto;
+	}	
+}
+
+
+/* PROCESSING INDICATOR */
+.processing-id{
+	width: 100px;
+	height: 70px;
+	display: block;
+	vertical-align: top;
+	margin: 15px auto 15px auto;
+	background-image: url(../img/icon-isiux-processing.gif);
+	background-repeat: no-repeat;
+}
+
+.processing-dark{background-position: 0 0;}
+.processing-light{background-position: -100px 0;}
+
+.processing-id-sm{
+	width: 16px;
+	height: 16px;
+	display: block;
+	vertical-align: top;
+	margin: 15px auto 15px auto;
+	background-image: url(../img/icon-isiux-processing16.gif);
+	background-repeat: no-repeat;
+}
+
+
+/*MODALS*/
+.modal-header{
+	background-color: #1b3952;
+	padding: 10px 15px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+.modal-title{
+	color:#019AD5;
+	padding: 5px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.modal-header .close{
+	opacity: 1;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.2);
+}
+.modal-header .close span{
+	font-size: 1.5em;
+	line-height: 1;
+	color: rgba(0,0,0,0.65);
+}
+.modal-header .close:hover span{
+	color: rgba(0,0,0,0.85);
+}
+.modal-header .btn,
+.modal-footer .btn{
+	float:right;
+	margin-left: 3px;
+}
+.modal-footer{
+	background-color: #f5f5f5;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+
+/*DIV Grid*/
+.table-grid {display: table;}
+.table-layout-fixed {table-layout: fixed;}
+.table-grid .table-row {display: table-row;}
+.table-grid .table-row .table-cell {display: table-cell;padding:5px;}
+
+
+/*UTILITY*/
+.margin-none{margin:0 !important;}
+.margin{margin: 15px !important;}
+.margin-left{margin-left: 15px !important;}
+.margin-right{margin-right: 15px !important;}
+.margin-top{margin-top: 15px !important;}
+.margin-bottom{margin-bottom: 15px !important;}
+.margin-sm{margin: 5px !important;}
+.margin-left-sm{margin-left: 5px !important;}
+.margin-right-sm{margin-right: 5px !important;}
+.margin-top-sm{margin-top: 5px !important;}
+.margin-bottom-sm{margin-bottom: 5px !important;}
+.margin-sides-none{margin-left: 0px !important; margin-right: 0px !important;}
+
+.padding-none{padding:0 !important;}
+.padding{padding: 15px !important;}
+.padding-left{padding-left: 15px !important;}
+.padding-right{padding-right: 15px !important;}
+.padding-top{padding-top: 15px !important;}
+.padding-bottom{padding-bottom: 15px !important;}
+.padding-sm{padding: 5px !important;}
+.padding-left-sm{padding-left: 5px !important;}
+.padding-right-sm{padding-right: 5px !important;}
+.padding-top-sm{padding-top: 5px !important;}
+.padding-bottom-sm{padding-bottom: 5px !important;}
+.padding-sides-none{padding-left: 0px !important; padding-right: 0px !important;}
+
+.full-width{width:100% !important;max-width:100% !important;min-width:100% !important;}
+.half-width{width:50% !important;max-width:50% !important;min-width:50% !important;}
+
+.no-border{border: none !important;}
+.border-bottom{border-bottom: 1px solid #ddd;}
+.border-top{border-top: 1px solid #ddd;}
+
+.text-white{color:#fff;}
+.bg-dark{background-color:#888;color:#fff;}
+.bg-light{background-color: #f5f5f5;}

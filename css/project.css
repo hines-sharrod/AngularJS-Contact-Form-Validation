@@ -1,0 +1,117 @@
+/*
+	*THESE IS THIS PROJECT'S SPECIFIC CSS FRAMEWORK
+	*ALL CUSTOM PROJECT STYLES SHOULD DISPLAY IN THIS FILE
+	*THIS IS THE ONLY FILE OF THE FRAMEWORK THAT SHOULD BE MODIFIED IN ANYWAY
+*/
+
+body {
+    padding-top: 50px;
+}
+
+
+.navbar {
+    background-color: #efefef;
+    max-height: 15px;
+}
+
+.navbar-header {
+    display: flex;
+    width: 100%;
+}
+
+.navbar>.container .navbar-brand{
+    flex: 1 1 100%;
+    margin-left: 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.navbar>.container .navbar-brand span{
+    justify-content: center;
+    font-size: 1em
+}
+
+
+/*Flexbox Container*/
+.main-content {
+    padding: 40px 15px 0px;
+    background-color: #2F5174;
+    background-image: url(../img/SideGridHeaderBGTile.gif);
+    background-repeat: repeat-x;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    border-bottom: 1px solid #8CA1B2;
+    margin-top: 40px;
+    display: flex;
+}
+
+/*Flexbox Container*/
+form {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Flexbox Container*/
+.form-group {
+    flex: 1 1 100%;
+    display: flex;
+}
+
+/*Flexbox item*/
+.form-group label {
+    flex: 1;
+}
+
+/*Flexbox item*/
+.form-group input, .form-group textarea, .form-group select {
+    flex: 9;
+}
+
+
+.form-group btn {
+    text-align: right;
+}
+
+.button-success {
+    height: auto;
+    border: 1px solid #4cae4c;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    background-image: none;
+    padding: 6px 12px;
+    color: #fff;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.button-success:hover {
+    height: auto;
+    border: 1px solid #314f6f;
+    border-radius: 4px;
+    background-color: #47a447;
+    background-image: none;
+    border-color: #398439;
+    padding: 6px 12px;
+    color: #fff;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#PageHeaderLink {
+    text-align: right;
+}
+
+#PageGridContainer .MessageGridHeader td {
+    background-color: #2F5174;
+    background-image: url(../img/SideGridHeaderBGTile.gif);
+    background-repeat: repeat-x;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    border-bottom: 1px solid #8CA1B2;
+}
+
+textarea.form-control {
+    height: auto;
+    max-width: 100%;
+}

@@ -1,6 +1,6 @@
-var app = angular.module('minmax', []);
+var app = angular.module('addBulletin', []);
 
-app.controller('MinMaxCtrl', function($scope, $http) {
+app.controller('FormCtrl', function($scope, $http) {
     $scope.formModel = {};
     
     $scope.onSubmit = function(valid) {
