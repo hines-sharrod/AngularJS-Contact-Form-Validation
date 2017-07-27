@@ -5,7 +5,7 @@
 */
 
 body {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .navbar {
@@ -38,7 +38,7 @@ h4 {
 /*Flexbox Container*/
 
 .main-content {
-    padding: 20px 15px 0px;
+    padding: 5px 15px 0px;
     background-color: #2F5174;
     background-image: url(../img/SideGridHeaderBGTile.gif);
     background-repeat: repeat-x;
@@ -48,11 +48,16 @@ h4 {
     border-bottom: 1px solid #8CA1B2;
     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main-content input[type=checkbox] {
     box-shadow: none;
     margin: 0;
+}
+
+.main-content h1 {
+    justify-content: center;
 }
 
 
