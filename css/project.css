@@ -54,6 +54,7 @@ h4 {
 .main-content input[type=checkbox] {
     box-shadow: none;
     margin: 0;
+    height: 15px;
 }
 
 .main-content h1 {
