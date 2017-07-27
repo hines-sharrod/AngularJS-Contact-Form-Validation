@@ -18,6 +18,10 @@ body {
     width: 100%;
 }
 
+.navbar-inverse .navbar-brand:hover {
+    color: #000;
+}
+
 .navbar>.container .navbar-brand {
     flex: 1 1 100%;
     margin-left: 0;
