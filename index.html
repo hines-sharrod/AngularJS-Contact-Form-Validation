@@ -44,58 +44,136 @@
 		<div class="form-group" >
 			<label for="username" >Starts on</label >
             <input id='datetimepicker1' type='text' class="form-control input-group date" />
-            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-			<input type="text"
-			       class="form-control"
-                   ng-model="formModel.username"
-			       id="username" 
-                   name="username">
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
+            <select class="form-control number-picker">
+              <option>00</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
             </select>
-            <span>:</span>
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <span class="colon">:</span>
+            <select class="form-control number-picker">
+               <option>00</option>
+               <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
             </select>
 		</div >
 
 		<div class="form-group border-bottom" >
 			<label for="age" >Ends On</label >
-			<input type="number"
-			       class="form-control"
-                   ng-model="formModel.age"
-			       id="age" 
-                   name="age">
+			<input id='datetimepicker1' type='text' class="form-control input-group date" />
+            <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
+            <select class="form-control number-picker">
+              <option>00</option>
+               <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
+            </select>
+            <span class="colon">:</span>
+            <select class="form-control number-picker">
+               <option>00</option>
+               <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
+            </select>
 		</div >
         
         <h4>Enter Approval Information</h4>
 
 		<div class="form-group" >
-			<label for="sex" >Approved</label >
-			<select name="sex"
-			        id="sex"
+			<label for="approved" >Approved</label >
+			<input type="checkbox" 
+                   name="approved"
+			        id="approved"
 				    class="form-control"
-                    ng-model="formModel.sex">
-				<option value="" >Please Choose</option >
-				<option value="male" >Male</option >
-				<option value="female" >Female</option >
-			</select >
+                    ng-model="formModel.approved">
 		</div >
 
 		<div class="form-group" >
 			<label for="password" >Approved On</label >
-			<input type="password"
-			       class="form-control"
-                   ng-model="formModel.password"
-			       id="password" >
+			<input id='datetimepicker1' type='text' class="form-control input-group date" />
+            <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
         </div>
         <div class="form-group border-bottom" >
 			<label for="password" >Approver Name</label >
@@ -106,27 +184,71 @@
 		</div >
         
         <h4>Enter Other Settings</h4>
-
-		<div class="form-group" >
-			<label for="sex" >Enabled</label >
-			<select name="sex"
-			        id="sex"
+        <div class="form-group" >
+            <label for="username" >Enabled</label >
+            <input type="checkbox" 
+                   name="approved"
+			        id="approved"
 				    class="form-control"
-                    ng-model="formModel.sex">
-				<option value="" >Please Choose</option >
-				<option value="male" >Male</option >
-				<option value="female" >Female</option >
-			</select >
+                    ng-model="formModel.approved">
+			<label for="username" >Starts on</label >
+            <input id='datetimepicker1' type='text' class="form-control input-group date" />
+            <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
+            <select class="form-control number-picker">
+              <option>00</option>
+               <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
+            </select>
+            <span class="colon">:</span>
+            <select class="form-control number-picker">
+               <option>00</option>
+               <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+            <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+                <option>11</option>
+              <option>12</option> 
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+                <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            <option>21</option>
+              <option>22</option>
+              <option>23</option>
+            </select>
 		</div >
 
-		<div class="form-group" >
-			<label for="password" >Occurs On <br>(Optional)</label >
-			<input type="password"
-			       class="form-control"
-                   ng-model="formModel.password"
-			       id="password" >
-		</div >
-        
 		<div class="form-group">
 			<button class="btn button-success" type="submit">Save</button>
 		</div>
