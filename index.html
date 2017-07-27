@@ -41,8 +41,8 @@
 		</div >
     
         <h4>Enter a UTC date range for when the bulletin is active:</h4>
-		<div class="form-group" >
-			<label for="username" >Starts on</label >
+		<div class="form-group date-picker" >
+			<label for="username" >Starts On</label >
             <input id='datetimepicker1' type='text' class="form-control input-group date" />
             <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
             <select class="form-control number-picker">
@@ -100,7 +100,7 @@
             </select>
 		</div >
 
-		<div class="form-group border-bottom" >
+		<div class="form-group border-bottom date-picker" >
 			<label for="age" >Ends On</label >
 			<input id='datetimepicker1' type='text' class="form-control input-group date" />
             <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>
@@ -191,6 +191,8 @@
 			        id="approved"
 				    class="form-control"
                     ng-model="formModel.approved">
+        </div>
+        <div class="form-group date-picker" >
 			<label for="username" >Starts on</label >
             <input id='datetimepicker1' type='text' class="form-control input-group date" />
             <span class="input-group-addon"><img src="img/calendar-icon.png"/></span>

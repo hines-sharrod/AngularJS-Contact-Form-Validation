@@ -55,7 +55,6 @@ body {
 /*Flexbox Container*/
 
 form {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
 }
@@ -69,29 +68,40 @@ form {
 }
 
 .form-group label {
+    flex: .2;
+}
+
+.form-group input {
+    flex: .3;
+}
+
+.form-group textarea {
     flex: 1;
 }
 
-.form-group input,
-.form-group textarea,
 .form-group select {
-    flex: 2;
+    flex: .1;
 }
 
-.form-group select {
-    width: 200px;
+.form-group select option {
+    justify-content: center;
 }
 
 .form-group .colon {
     align-self: center;
+    margin: 0 5px;
 }
 
 .input-group-addon {
-    width: 50px;
+    width: 45px;
+    border-radius: 3px !important;
+    margin-left: -3px;
+    margin-right: 20px;
 }
 
 .input-group-addon>img {
     max-height: 20px;
+    text-align: center;
 }
 
 .button-success {
@@ -103,6 +113,8 @@ form {
     padding: 6px 12px;
     color: #fff;
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), 0 2px 5px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    margin-top: 10px;
 }
 
 .button-success:hover {
